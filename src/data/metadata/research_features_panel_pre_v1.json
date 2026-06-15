@@ -1,0 +1,17 @@
+{
+  "method": "v1_winsor_robustz",
+  "rows": 2461082,
+  "symbols": 499,
+  "date_min": "2005-01-03",
+  "date_max": "2026-04-02",
+  "feature_columns": 22,
+  "preprocessing": {
+    "denoising": [
+      "Per-symbol winsorization at 1st/99th percentiles"
+    ],
+    "normalization": [
+      "Per-symbol robust z-score using median/IQR"
+    ]
+  },
+  "output_csv": "data\\processed\\features\\research_features_panel_pre_v1.csv"
+}

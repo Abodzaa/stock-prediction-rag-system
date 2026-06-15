@@ -1,0 +1,29 @@
+{
+  "rows": 2461082,
+  "symbols": 499,
+  "date_min": "2005-01-03",
+  "date_max": "2026-04-02",
+  "feature_counts": {
+    "g1": 8,
+    "g2": 9,
+    "g3": 5
+  },
+  "targets": [
+    "target_h1",
+    "target_h5"
+  ],
+  "preprocessing": {
+    "denoising": [
+      "symbol-level winsorization on returns and targets",
+      "soft clipping of extreme range/volume-derived indicators"
+    ],
+    "normalization": [
+      "cross-sectional z-score features per day (g3_cs_*)",
+      "train-only scaling in experiment pipelines (RobustScaler/StandardScaler)"
+    ]
+  },
+  "output_csv": "data\\processed\\features\\research_features_panel.csv",
+  "median_rows_per_symbol": 5351.0,
+  "min_rows_per_symbol": 290,
+  "max_rows_per_symbol": 5351
+}

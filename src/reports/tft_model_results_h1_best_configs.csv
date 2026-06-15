@@ -1,0 +1,4 @@
+model_name,feature_group,lag_window,hidden_size,lr,epochs,patience,batch_size,target,status,note,rmse,mae,directional_accuracy,sharpe,n_rows,n_features,seq_len,n_test_total,avg_epochs_trained,artifact_path
+TFT,G2_price_technical,64,32,0.001,20,10,64,target_h1,ok,,0.007804899010807276,0.0056974575854837894,0.5714285714285714,0.5232286377100563,4966,17,64,63,12.0,artifacts/models/deep_torch/target_h1/target_h1_G2_price_technical_TFT_lag64_h32_lr0.001_e20_p10.pt
+TFT,G1_price_only,64,32,0.001,20,10,64,target_h1,ok,,0.007834849879145622,0.005746124777942896,0.5873015873015873,1.2701770226898748,4966,8,64,63,13.0,artifacts/models/deep_torch/target_h1/target_h1_G1_price_only_TFT_lag64_h32_lr0.001_e20_p10.pt
+TFT,G3_plus_breadth,64,32,0.001,20,10,64,target_h1,ok,,0.008008791133761406,0.005837094038724899,0.5873015873015873,0.6876036125792845,4966,24,64,63,20.0,artifacts/models/deep_torch/target_h1/target_h1_G3_plus_breadth_TFT_lag64_h32_lr0.001_e20_p10.pt

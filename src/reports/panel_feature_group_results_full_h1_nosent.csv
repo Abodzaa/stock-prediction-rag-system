@@ -1,0 +1,4 @@
+feature_group,best_model_family,lag_window,epochs,patience,rmse,mae,directional_accuracy,sharpe,n_features,n_rows,n_test_total,artifact_path
+G1_price_only,ridge,0,300,20,0.020377053163944985,0.014002555345110577,0.5104669630668388,0.1684889946523221,8,2461082,188259,artifacts\models\panel_full_h1_nosent\target_h1\target_h1_G1_price_only_ridge_lag0_e300_p20.joblib
+G2_price_technical,ridge,0,300,20,0.020378521667203203,0.01400551468849142,0.510052640245619,0.19317156145600886,17,2461082,188259,artifacts\models\panel_full_h1_nosent\target_h1\target_h1_G2_price_technical_ridge_lag0_e300_p20.joblib
+G3_plus_panel_breadth,ridge,0,300,20,0.020374436134330227,0.014002473748170896,0.512666061117928,0.24797099997043878,22,2461082,188259,artifacts\models\panel_full_h1_nosent\target_h1\target_h1_G3_plus_panel_breadth_ridge_lag0_e300_p20.joblib

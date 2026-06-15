@@ -1,0 +1,1 @@
+{"nodes": [{"id": "src_model_factory", "label": "Torch Model Factory", "file_type": "code", "source_file": "src/models/model_factory.py", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}

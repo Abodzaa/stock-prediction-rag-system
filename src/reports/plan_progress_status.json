@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "partial": 7,
+    "completed": 4,
+    "missing": 2
+  },
+  "completed": [
+    "Phase -1 Data bootstrap",
+    "Phase 0 Research contract",
+    "Phase 1 Data QA/alignment",
+    "Phase 3 Sequence dataset builder"
+  ],
+  "partial": [
+    "Phase 1A Missing/scaling policy",
+    "Phase 2 Features G1-G6",
+    "Phase 4 Model suite",
+    "Phase 7 Full ablations G1..G6",
+    "Phase 8 A-E experiment set",
+    "Phase 9 Failure analysis",
+    "Phase 10 Promotion criteria"
+  ],
+  "missing": [
+    "Phase 5 NLP pipeline",
+    "Phase 6 Multi-modal integration"
+  ]
+}

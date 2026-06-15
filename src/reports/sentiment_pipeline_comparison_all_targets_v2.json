@@ -1,0 +1,61 @@
+{
+  "winner_by_model_c_rmse": "tie",
+  "recommended_production_pipeline": "finbert",
+  "recommendation_reason": "Model C performance is effectively tied; prefer FinBERT for simpler, domain-specific, and more stable production deployment.",
+  "aggregate": [
+    {
+      "pipeline": "finbert",
+      "avg_model_c_rmse": 0.0136248628063259,
+      "avg_model_c_dir_acc": 0.4333333333333333,
+      "avg_model_c_sharpe": -1.5278166307707135,
+      "avg_delta_c_vs_d_rmse": -0.0006932414343328,
+      "avg_delta_c_vs_e_rmse": -0.0006210229406622
+    },
+    {
+      "pipeline": "rag",
+      "avg_model_c_rmse": 0.0136248628063259,
+      "avg_model_c_dir_acc": 0.4333333333333333,
+      "avg_model_c_sharpe": -1.5278166307707135,
+      "avg_delta_c_vs_d_rmse": -0.00070644627588275,
+      "avg_delta_c_vs_e_rmse": -0.0006210229406622
+    }
+  ],
+  "per_target": [
+    {
+      "target": "h1",
+      "pipeline": "finbert",
+      "model_c_rmse": 0.0096592356552792,
+      "model_c_dir_acc": 0.4833333333333333,
+      "model_c_sharpe": -0.5803911299975251,
+      "delta_c_vs_d_rmse": -0.0005470193644064,
+      "delta_c_vs_e_rmse": -0.0003504004160439
+    },
+    {
+      "target": "h1",
+      "pipeline": "rag",
+      "model_c_rmse": 0.0096592356552792,
+      "model_c_dir_acc": 0.4833333333333333,
+      "model_c_sharpe": -0.5803911299975251,
+      "delta_c_vs_d_rmse": -0.0005093864182528,
+      "delta_c_vs_e_rmse": -0.0003504004160439
+    },
+    {
+      "target": "h5",
+      "pipeline": "finbert",
+      "model_c_rmse": 0.0175904899573726,
+      "model_c_dir_acc": 0.3833333333333333,
+      "model_c_sharpe": -2.4752421315439017,
+      "delta_c_vs_d_rmse": -0.0008394635042592,
+      "delta_c_vs_e_rmse": -0.0008916454652805
+    },
+    {
+      "target": "h5",
+      "pipeline": "rag",
+      "model_c_rmse": 0.0175904899573726,
+      "model_c_dir_acc": 0.3833333333333333,
+      "model_c_sharpe": -2.4752421315439017,
+      "delta_c_vs_d_rmse": -0.0009035061335127,
+      "delta_c_vs_e_rmse": -0.0008916454652805
+    }
+  ]
+}

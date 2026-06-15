@@ -1,0 +1,6844 @@
+{
+  "generatedAt": "2026-06-15T09:24:45.951Z",
+  "sourceDirectory": "src/data/metadata",
+  "counts": {
+    "total": 512,
+    "sp500": 500,
+    "nasdaq100": 100,
+    "dedicatedModels": 97
+  },
+  "constituents": [
+    {
+      "symbol": "MMM",
+      "security": "3M",
+      "yahooSymbol": "MMM",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AOS",
+      "security": "A. O. Smith",
+      "yahooSymbol": "AOS",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ABT",
+      "security": "Abbott Laboratories",
+      "yahooSymbol": "ABT",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ABBV",
+      "security": "AbbVie",
+      "yahooSymbol": "ABBV",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ACN",
+      "security": "Accenture",
+      "yahooSymbol": "ACN",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ADBE",
+      "security": "Adobe Inc.",
+      "yahooSymbol": "ADBE",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AMD",
+      "security": "Advanced Micro Devices",
+      "yahooSymbol": "AMD",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AES",
+      "security": "AES Corporation",
+      "yahooSymbol": "AES",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AFL",
+      "security": "Aflac",
+      "yahooSymbol": "AFL",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "A",
+      "security": "Agilent Technologies",
+      "yahooSymbol": "A",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "APD",
+      "security": "Air Products",
+      "yahooSymbol": "APD",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ABNB",
+      "security": "Airbnb",
+      "yahooSymbol": "ABNB",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AKAM",
+      "security": "Akamai Technologies",
+      "yahooSymbol": "AKAM",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ALB",
+      "security": "Albemarle Corporation",
+      "yahooSymbol": "ALB",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ARE",
+      "security": "Alexandria Real Estate Equities",
+      "yahooSymbol": "ARE",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ALGN",
+      "security": "Align Technology",
+      "yahooSymbol": "ALGN",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ALLE",
+      "security": "Allegion",
+      "yahooSymbol": "ALLE",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LNT",
+      "security": "Alliant Energy",
+      "yahooSymbol": "LNT",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ALL",
+      "security": "Allstate",
+      "yahooSymbol": "ALL",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ALNY",
+      "security": "Alnylam Pharmaceuticals",
+      "yahooSymbol": "ALNY",
+      "sector": "Health Care",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "GOOGL",
+      "security": "Alphabet Inc. (Class A)",
+      "yahooSymbol": "GOOGL",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "GOOG",
+      "security": "Alphabet Inc. (Class C)",
+      "yahooSymbol": "GOOG",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MO",
+      "security": "Altria",
+      "yahooSymbol": "MO",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AMZN",
+      "security": "Amazon",
+      "yahooSymbol": "AMZN",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AMCR",
+      "security": "Amcor",
+      "yahooSymbol": "AMCR",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AEE",
+      "security": "Ameren",
+      "yahooSymbol": "AEE",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AEP",
+      "security": "American Electric Power",
+      "yahooSymbol": "AEP",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AXP",
+      "security": "American Express",
+      "yahooSymbol": "AXP",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AIG",
+      "security": "American International Group",
+      "yahooSymbol": "AIG",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AMT",
+      "security": "American Tower",
+      "yahooSymbol": "AMT",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AWK",
+      "security": "American Water Works",
+      "yahooSymbol": "AWK",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AMP",
+      "security": "Ameriprise Financial",
+      "yahooSymbol": "AMP",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AME",
+      "security": "Ametek",
+      "yahooSymbol": "AME",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AMGN",
+      "security": "Amgen",
+      "yahooSymbol": "AMGN",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "APH",
+      "security": "Amphenol",
+      "yahooSymbol": "APH",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ADI",
+      "security": "Analog Devices",
+      "yahooSymbol": "ADI",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AON",
+      "security": "Aon plc",
+      "yahooSymbol": "AON",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "APA",
+      "security": "APA Corporation",
+      "yahooSymbol": "APA",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "APO",
+      "security": "Apollo Global Management",
+      "yahooSymbol": "APO",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AAPL",
+      "security": "Apple Inc.",
+      "yahooSymbol": "AAPL",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AMAT",
+      "security": "Applied Materials",
+      "yahooSymbol": "AMAT",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "APP",
+      "security": "AppLovin",
+      "yahooSymbol": "APP",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "APTV",
+      "security": "Aptiv",
+      "yahooSymbol": "APTV",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ACGL",
+      "security": "Arch Capital Group",
+      "yahooSymbol": "ACGL",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ADM",
+      "security": "Archer Daniels Midland",
+      "yahooSymbol": "ADM",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ARES",
+      "security": "Ares Management",
+      "yahooSymbol": "ARES",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ANET",
+      "security": "Arista Networks",
+      "yahooSymbol": "ANET",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ARM",
+      "security": "Arm Holdings",
+      "yahooSymbol": "ARM",
+      "sector": "Technology",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AJG",
+      "security": "Arthur J. Gallagher & Co.",
+      "yahooSymbol": "AJG",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ASML",
+      "security": "ASML Holding",
+      "yahooSymbol": "ASML",
+      "sector": "Technology",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AIZ",
+      "security": "Assurant",
+      "yahooSymbol": "AIZ",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "T",
+      "security": "AT&T",
+      "yahooSymbol": "T",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ATO",
+      "security": "Atmos Energy",
+      "yahooSymbol": "ATO",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ADSK",
+      "security": "Autodesk",
+      "yahooSymbol": "ADSK",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "ADP",
+      "security": "Automatic Data Processing",
+      "yahooSymbol": "ADP",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "AZO",
+      "security": "AutoZone",
+      "yahooSymbol": "AZO",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AVB",
+      "security": "AvalonBay Communities",
+      "yahooSymbol": "AVB",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AVY",
+      "security": "Avery Dennison",
+      "yahooSymbol": "AVY",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AXON",
+      "security": "Axon Enterprise",
+      "yahooSymbol": "AXON",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "BKR",
+      "security": "Baker Hughes",
+      "yahooSymbol": "BKR",
+      "sector": "Energy",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "BALL",
+      "security": "Ball Corporation",
+      "yahooSymbol": "BALL",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BAC",
+      "security": "Bank of America",
+      "yahooSymbol": "BAC",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BAX",
+      "security": "Baxter International",
+      "yahooSymbol": "BAX",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BDX",
+      "security": "Becton Dickinson",
+      "yahooSymbol": "BDX",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BRK.B",
+      "security": "Berkshire Hathaway",
+      "yahooSymbol": "BRK-B",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BBY",
+      "security": "Best Buy",
+      "yahooSymbol": "BBY",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TECH",
+      "security": "Bio-Techne",
+      "yahooSymbol": "TECH",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BIIB",
+      "security": "Biogen",
+      "yahooSymbol": "BIIB",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BLK",
+      "security": "BlackRock",
+      "yahooSymbol": "BLK",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BX",
+      "security": "Blackstone Inc.",
+      "yahooSymbol": "BX",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "XYZ",
+      "security": "Block, Inc.",
+      "yahooSymbol": "XYZ",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BK",
+      "security": "BNY Mellon",
+      "yahooSymbol": "BK",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BA",
+      "security": "Boeing",
+      "yahooSymbol": "BA",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BKNG",
+      "security": "Booking Holdings",
+      "yahooSymbol": "BKNG",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "BSX",
+      "security": "Boston Scientific",
+      "yahooSymbol": "BSX",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BMY",
+      "security": "Bristol Myers Squibb",
+      "yahooSymbol": "BMY",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "AVGO",
+      "security": "Broadcom",
+      "yahooSymbol": "AVGO",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "BR",
+      "security": "Broadridge Financial Solutions",
+      "yahooSymbol": "BR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BRO",
+      "security": "Brown & Brown",
+      "yahooSymbol": "BRO",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BF.B",
+      "security": "Brown–Forman",
+      "yahooSymbol": "BF-B",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BLDR",
+      "security": "Builders FirstSource",
+      "yahooSymbol": "BLDR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BG",
+      "security": "Bunge Global",
+      "yahooSymbol": "BG",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BXP",
+      "security": "BXP, Inc.",
+      "yahooSymbol": "BXP",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CHRW",
+      "security": "C.H. Robinson",
+      "yahooSymbol": "CHRW",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CDNS",
+      "security": "Cadence Design Systems",
+      "yahooSymbol": "CDNS",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "CPT",
+      "security": "Camden Property Trust",
+      "yahooSymbol": "CPT",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CPB",
+      "security": "Campbell's Company (The)",
+      "yahooSymbol": "CPB",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "COF",
+      "security": "Capital One",
+      "yahooSymbol": "COF",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CAH",
+      "security": "Cardinal Health",
+      "yahooSymbol": "CAH",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CCL",
+      "security": "Carnival",
+      "yahooSymbol": "CCL",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CARR",
+      "security": "Carrier Global",
+      "yahooSymbol": "CARR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CVNA",
+      "security": "Carvana",
+      "yahooSymbol": "CVNA",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CASY",
+      "security": "Casey's",
+      "yahooSymbol": "CASY",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CAT",
+      "security": "Caterpillar Inc.",
+      "yahooSymbol": "CAT",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CBOE",
+      "security": "Cboe Global Markets",
+      "yahooSymbol": "CBOE",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CBRE",
+      "security": "CBRE Group",
+      "yahooSymbol": "CBRE",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CDW",
+      "security": "CDW Corporation",
+      "yahooSymbol": "CDW",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "COR",
+      "security": "Cencora",
+      "yahooSymbol": "COR",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CNC",
+      "security": "Centene Corporation",
+      "yahooSymbol": "CNC",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CNP",
+      "security": "CenterPoint Energy",
+      "yahooSymbol": "CNP",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CF",
+      "security": "CF Industries",
+      "yahooSymbol": "CF",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CRL",
+      "security": "Charles River Laboratories",
+      "yahooSymbol": "CRL",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SCHW",
+      "security": "Charles Schwab Corporation",
+      "yahooSymbol": "SCHW",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CHTR",
+      "security": "Charter Communications",
+      "yahooSymbol": "CHTR",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "CVX",
+      "security": "Chevron Corporation",
+      "yahooSymbol": "CVX",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CMG",
+      "security": "Chipotle Mexican Grill",
+      "yahooSymbol": "CMG",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CB",
+      "security": "Chubb Limited",
+      "yahooSymbol": "CB",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CHD",
+      "security": "Church & Dwight",
+      "yahooSymbol": "CHD",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CIEN",
+      "security": "Ciena",
+      "yahooSymbol": "CIEN",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CI",
+      "security": "Cigna",
+      "yahooSymbol": "CI",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CINF",
+      "security": "Cincinnati Financial",
+      "yahooSymbol": "CINF",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CTAS",
+      "security": "Cintas",
+      "yahooSymbol": "CTAS",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "CSCO",
+      "security": "Cisco",
+      "yahooSymbol": "CSCO",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "C",
+      "security": "Citigroup",
+      "yahooSymbol": "C",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CFG",
+      "security": "Citizens Financial Group",
+      "yahooSymbol": "CFG",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CLX",
+      "security": "Clorox",
+      "yahooSymbol": "CLX",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CME",
+      "security": "CME Group",
+      "yahooSymbol": "CME",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CMS",
+      "security": "CMS Energy",
+      "yahooSymbol": "CMS",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KO",
+      "security": "Coca-Cola Company (The)",
+      "yahooSymbol": "KO",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CCEP",
+      "security": "Coca-Cola Europacific Partners",
+      "yahooSymbol": "CCEP",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "CTSH",
+      "security": "Cognizant",
+      "yahooSymbol": "CTSH",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "COHR",
+      "security": "Coherent Corp.",
+      "yahooSymbol": "COHR",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "COIN",
+      "security": "Coinbase",
+      "yahooSymbol": "COIN",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CL",
+      "security": "Colgate-Palmolive",
+      "yahooSymbol": "CL",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CMCSA",
+      "security": "Comcast",
+      "yahooSymbol": "CMCSA",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "FIX",
+      "security": "Comfort Systems USA",
+      "yahooSymbol": "FIX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CAG",
+      "security": "Conagra Brands",
+      "yahooSymbol": "CAG",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "COP",
+      "security": "ConocoPhillips",
+      "yahooSymbol": "COP",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ED",
+      "security": "Consolidated Edison",
+      "yahooSymbol": "ED",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "STZ",
+      "security": "Constellation Brands",
+      "yahooSymbol": "STZ",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CEG",
+      "security": "Constellation Energy",
+      "yahooSymbol": "CEG",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "COO",
+      "security": "Cooper Companies (The)",
+      "yahooSymbol": "COO",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CPRT",
+      "security": "Copart",
+      "yahooSymbol": "CPRT",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "GLW",
+      "security": "Corning Inc.",
+      "yahooSymbol": "GLW",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CPAY",
+      "security": "Corpay",
+      "yahooSymbol": "CPAY",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CTVA",
+      "security": "Corteva",
+      "yahooSymbol": "CTVA",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CSGP",
+      "security": "CoStar Group",
+      "yahooSymbol": "CSGP",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "COST",
+      "security": "Costco",
+      "yahooSymbol": "COST",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "CTRA",
+      "security": "Coterra",
+      "yahooSymbol": "CTRA",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CRH",
+      "security": "CRH plc",
+      "yahooSymbol": "CRH",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CRWD",
+      "security": "CrowdStrike",
+      "yahooSymbol": "CRWD",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "CCI",
+      "security": "Crown Castle",
+      "yahooSymbol": "CCI",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CSX",
+      "security": "CSX Corporation",
+      "yahooSymbol": "CSX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "CMI",
+      "security": "Cummins",
+      "yahooSymbol": "CMI",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CVS",
+      "security": "CVS Health",
+      "yahooSymbol": "CVS",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DHI",
+      "security": "D. R. Horton",
+      "yahooSymbol": "DHI",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DHR",
+      "security": "Danaher Corporation",
+      "yahooSymbol": "DHR",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DRI",
+      "security": "Darden Restaurants",
+      "yahooSymbol": "DRI",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DDOG",
+      "security": "Datadog",
+      "yahooSymbol": "DDOG",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "DVA",
+      "security": "DaVita",
+      "yahooSymbol": "DVA",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DECK",
+      "security": "Deckers Brands",
+      "yahooSymbol": "DECK",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DE",
+      "security": "Deere & Company",
+      "yahooSymbol": "DE",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DELL",
+      "security": "Dell Technologies",
+      "yahooSymbol": "DELL",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DAL",
+      "security": "Delta Air Lines",
+      "yahooSymbol": "DAL",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DVN",
+      "security": "Devon Energy",
+      "yahooSymbol": "DVN",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DXCM",
+      "security": "Dexcom",
+      "yahooSymbol": "DXCM",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "FANG",
+      "security": "Diamondback Energy",
+      "yahooSymbol": "FANG",
+      "sector": "Energy",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "DLR",
+      "security": "Digital Realty",
+      "yahooSymbol": "DLR",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DG",
+      "security": "Dollar General",
+      "yahooSymbol": "DG",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DLTR",
+      "security": "Dollar Tree",
+      "yahooSymbol": "DLTR",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "D",
+      "security": "Dominion Energy",
+      "yahooSymbol": "D",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DPZ",
+      "security": "Domino's",
+      "yahooSymbol": "DPZ",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DASH",
+      "security": "DoorDash",
+      "yahooSymbol": "DASH",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "DOV",
+      "security": "Dover Corporation",
+      "yahooSymbol": "DOV",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DOW",
+      "security": "Dow Inc.",
+      "yahooSymbol": "DOW",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DTE",
+      "security": "DTE Energy",
+      "yahooSymbol": "DTE",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DUK",
+      "security": "Duke Energy",
+      "yahooSymbol": "DUK",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DD",
+      "security": "DuPont",
+      "yahooSymbol": "DD",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ETN",
+      "security": "Eaton Corporation",
+      "yahooSymbol": "ETN",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EBAY",
+      "security": "eBay Inc.",
+      "yahooSymbol": "EBAY",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SATS",
+      "security": "EchoStar",
+      "yahooSymbol": "SATS",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ECL",
+      "security": "Ecolab",
+      "yahooSymbol": "ECL",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EIX",
+      "security": "Edison International",
+      "yahooSymbol": "EIX",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EW",
+      "security": "Edwards Lifesciences",
+      "yahooSymbol": "EW",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EA",
+      "security": "Electronic Arts",
+      "yahooSymbol": "EA",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "ELV",
+      "security": "Elevance Health",
+      "yahooSymbol": "ELV",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EME",
+      "security": "Emcor",
+      "yahooSymbol": "EME",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EMR",
+      "security": "Emerson Electric",
+      "yahooSymbol": "EMR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ETR",
+      "security": "Entergy",
+      "yahooSymbol": "ETR",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EOG",
+      "security": "EOG Resources",
+      "yahooSymbol": "EOG",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EPAM",
+      "security": "EPAM Systems",
+      "yahooSymbol": "EPAM",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EQT",
+      "security": "EQT Corporation",
+      "yahooSymbol": "EQT",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EFX",
+      "security": "Equifax",
+      "yahooSymbol": "EFX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EQIX",
+      "security": "Equinix",
+      "yahooSymbol": "EQIX",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EQR",
+      "security": "Equity Residential",
+      "yahooSymbol": "EQR",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ERIE",
+      "security": "Erie Indemnity",
+      "yahooSymbol": "ERIE",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ESS",
+      "security": "Essex Property Trust",
+      "yahooSymbol": "ESS",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EL",
+      "security": "Estée Lauder Companies (The)",
+      "yahooSymbol": "EL",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EG",
+      "security": "Everest Group",
+      "yahooSymbol": "EG",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EVRG",
+      "security": "Evergy",
+      "yahooSymbol": "EVRG",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ES",
+      "security": "Eversource Energy",
+      "yahooSymbol": "ES",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EXC",
+      "security": "Exelon",
+      "yahooSymbol": "EXC",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "EXE",
+      "security": "Expand Energy",
+      "yahooSymbol": "EXE",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EXPE",
+      "security": "Expedia Group",
+      "yahooSymbol": "EXPE",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EXPD",
+      "security": "Expeditors International",
+      "yahooSymbol": "EXPD",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "EXR",
+      "security": "Extra Space Storage",
+      "yahooSymbol": "EXR",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "XOM",
+      "security": "ExxonMobil",
+      "yahooSymbol": "XOM",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FFIV",
+      "security": "F5, Inc.",
+      "yahooSymbol": "FFIV",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FDS",
+      "security": "FactSet",
+      "yahooSymbol": "FDS",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FICO",
+      "security": "Fair Isaac",
+      "yahooSymbol": "FICO",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FAST",
+      "security": "Fastenal",
+      "yahooSymbol": "FAST",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "FRT",
+      "security": "Federal Realty Investment Trust",
+      "yahooSymbol": "FRT",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FDX",
+      "security": "FedEx",
+      "yahooSymbol": "FDX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FER",
+      "security": "Ferrovial",
+      "yahooSymbol": "FER",
+      "sector": "Industrials",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "FIS",
+      "security": "Fidelity National Information Services",
+      "yahooSymbol": "FIS",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FITB",
+      "security": "Fifth Third Bancorp",
+      "yahooSymbol": "FITB",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FSLR",
+      "security": "First Solar",
+      "yahooSymbol": "FSLR",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FE",
+      "security": "FirstEnergy",
+      "yahooSymbol": "FE",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FISV",
+      "security": "Fiserv",
+      "yahooSymbol": "FISV",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "F",
+      "security": "Ford Motor Company",
+      "yahooSymbol": "F",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FTNT",
+      "security": "Fortinet",
+      "yahooSymbol": "FTNT",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "FTV",
+      "security": "Fortive",
+      "yahooSymbol": "FTV",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FOXA",
+      "security": "Fox Corporation (Class A)",
+      "yahooSymbol": "FOXA",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FOX",
+      "security": "Fox Corporation (Class B)",
+      "yahooSymbol": "FOX",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "BEN",
+      "security": "Franklin Resources",
+      "yahooSymbol": "BEN",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "FCX",
+      "security": "Freeport-McMoRan",
+      "yahooSymbol": "FCX",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GRMN",
+      "security": "Garmin",
+      "yahooSymbol": "GRMN",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IT",
+      "security": "Gartner",
+      "yahooSymbol": "IT",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GE",
+      "security": "GE Aerospace",
+      "yahooSymbol": "GE",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GEHC",
+      "security": "GE HealthCare",
+      "yahooSymbol": "GEHC",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GEV",
+      "security": "GE Vernova",
+      "yahooSymbol": "GEV",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GEN",
+      "security": "Gen Digital",
+      "yahooSymbol": "GEN",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GNRC",
+      "security": "Generac",
+      "yahooSymbol": "GNRC",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GD",
+      "security": "General Dynamics",
+      "yahooSymbol": "GD",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GIS",
+      "security": "General Mills",
+      "yahooSymbol": "GIS",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GM",
+      "security": "General Motors",
+      "yahooSymbol": "GM",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GPC",
+      "security": "Genuine Parts Company",
+      "yahooSymbol": "GPC",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GILD",
+      "security": "Gilead Sciences",
+      "yahooSymbol": "GILD",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "GPN",
+      "security": "Global Payments",
+      "yahooSymbol": "GPN",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GL",
+      "security": "Globe Life",
+      "yahooSymbol": "GL",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GDDY",
+      "security": "GoDaddy",
+      "yahooSymbol": "GDDY",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GS",
+      "security": "Goldman Sachs",
+      "yahooSymbol": "GS",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HAL",
+      "security": "Halliburton",
+      "yahooSymbol": "HAL",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HIG",
+      "security": "Hartford (The)",
+      "yahooSymbol": "HIG",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HAS",
+      "security": "Hasbro",
+      "yahooSymbol": "HAS",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HCA",
+      "security": "HCA Healthcare",
+      "yahooSymbol": "HCA",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DOC",
+      "security": "Healthpeak Properties",
+      "yahooSymbol": "DOC",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HSIC",
+      "security": "Henry Schein",
+      "yahooSymbol": "HSIC",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HSY",
+      "security": "Hershey Company (The)",
+      "yahooSymbol": "HSY",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HPE",
+      "security": "Hewlett Packard Enterprise",
+      "yahooSymbol": "HPE",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HLT",
+      "security": "Hilton Worldwide",
+      "yahooSymbol": "HLT",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HD",
+      "security": "Home Depot (The)",
+      "yahooSymbol": "HD",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HON",
+      "security": "Honeywell",
+      "yahooSymbol": "HON",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "HRL",
+      "security": "Hormel Foods",
+      "yahooSymbol": "HRL",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HST",
+      "security": "Host Hotels & Resorts",
+      "yahooSymbol": "HST",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HWM",
+      "security": "Howmet Aerospace",
+      "yahooSymbol": "HWM",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HPQ",
+      "security": "HP Inc.",
+      "yahooSymbol": "HPQ",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HUBB",
+      "security": "Hubbell Incorporated",
+      "yahooSymbol": "HUBB",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HUM",
+      "security": "Humana",
+      "yahooSymbol": "HUM",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HBAN",
+      "security": "Huntington Bancshares",
+      "yahooSymbol": "HBAN",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HII",
+      "security": "Huntington Ingalls Industries",
+      "yahooSymbol": "HII",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IBM",
+      "security": "IBM",
+      "yahooSymbol": "IBM",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IEX",
+      "security": "IDEX Corporation",
+      "yahooSymbol": "IEX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IDXX",
+      "security": "Idexx Laboratories",
+      "yahooSymbol": "IDXX",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "ITW",
+      "security": "Illinois Tool Works",
+      "yahooSymbol": "ITW",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "INCY",
+      "security": "Incyte",
+      "yahooSymbol": "INCY",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IR",
+      "security": "Ingersoll Rand",
+      "yahooSymbol": "IR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "INSM",
+      "security": "Insmed Incorporated",
+      "yahooSymbol": "INSM",
+      "sector": "Health Care",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PODD",
+      "security": "Insulet Corporation",
+      "yahooSymbol": "PODD",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "INTC",
+      "security": "Intel",
+      "yahooSymbol": "INTC",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "IBKR",
+      "security": "Interactive Brokers",
+      "yahooSymbol": "IBKR",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ICE",
+      "security": "Intercontinental Exchange",
+      "yahooSymbol": "ICE",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IFF",
+      "security": "International Flavors & Fragrances",
+      "yahooSymbol": "IFF",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IP",
+      "security": "International Paper",
+      "yahooSymbol": "IP",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "INTU",
+      "security": "Intuit",
+      "yahooSymbol": "INTU",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "ISRG",
+      "security": "Intuitive Surgical",
+      "yahooSymbol": "ISRG",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "IVZ",
+      "security": "Invesco",
+      "yahooSymbol": "IVZ",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "INVH",
+      "security": "Invitation Homes",
+      "yahooSymbol": "INVH",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IQV",
+      "security": "IQVIA",
+      "yahooSymbol": "IQV",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "IRM",
+      "security": "Iron Mountain",
+      "yahooSymbol": "IRM",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "JBHT",
+      "security": "J.B. Hunt",
+      "yahooSymbol": "JBHT",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SJM",
+      "security": "J.M. Smucker Company (The)",
+      "yahooSymbol": "SJM",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "JBL",
+      "security": "Jabil",
+      "yahooSymbol": "JBL",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "JKHY",
+      "security": "Jack Henry & Associates",
+      "yahooSymbol": "JKHY",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "J",
+      "security": "Jacobs Solutions",
+      "yahooSymbol": "J",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "JNJ",
+      "security": "Johnson & Johnson",
+      "yahooSymbol": "JNJ",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "JCI",
+      "security": "Johnson Controls",
+      "yahooSymbol": "JCI",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "JPM",
+      "security": "JPMorgan Chase",
+      "yahooSymbol": "JPM",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KVUE",
+      "security": "Kenvue",
+      "yahooSymbol": "KVUE",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KDP",
+      "security": "Keurig Dr Pepper",
+      "yahooSymbol": "KDP",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "KEY",
+      "security": "KeyCorp",
+      "yahooSymbol": "KEY",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KEYS",
+      "security": "Keysight Technologies",
+      "yahooSymbol": "KEYS",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KMB",
+      "security": "Kimberly-Clark",
+      "yahooSymbol": "KMB",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KIM",
+      "security": "Kimco Realty",
+      "yahooSymbol": "KIM",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KMI",
+      "security": "Kinder Morgan",
+      "yahooSymbol": "KMI",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KKR",
+      "security": "KKR & Co.",
+      "yahooSymbol": "KKR",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "KLAC",
+      "security": "KLA Corporation",
+      "yahooSymbol": "KLAC",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "KHC",
+      "security": "Kraft Heinz",
+      "yahooSymbol": "KHC",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "KR",
+      "security": "Kroger",
+      "yahooSymbol": "KR",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LHX",
+      "security": "L3Harris",
+      "yahooSymbol": "LHX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LH",
+      "security": "Labcorp",
+      "yahooSymbol": "LH",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LRCX",
+      "security": "Lam Research",
+      "yahooSymbol": "LRCX",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "LVS",
+      "security": "Las Vegas Sands",
+      "yahooSymbol": "LVS",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LDOS",
+      "security": "Leidos",
+      "yahooSymbol": "LDOS",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LEN",
+      "security": "Lennar",
+      "yahooSymbol": "LEN",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LII",
+      "security": "Lennox International",
+      "yahooSymbol": "LII",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LLY",
+      "security": "Lilly (Eli)",
+      "yahooSymbol": "LLY",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LIN",
+      "security": "Linde plc",
+      "yahooSymbol": "LIN",
+      "sector": "Materials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "LYV",
+      "security": "Live Nation Entertainment",
+      "yahooSymbol": "LYV",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LMT",
+      "security": "Lockheed Martin",
+      "yahooSymbol": "LMT",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "L",
+      "security": "Loews Corporation",
+      "yahooSymbol": "L",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LOW",
+      "security": "Lowe's",
+      "yahooSymbol": "LOW",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LULU",
+      "security": "Lululemon Athletica",
+      "yahooSymbol": "LULU",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LITE",
+      "security": "Lumentum",
+      "yahooSymbol": "LITE",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "LYB",
+      "security": "LyondellBasell",
+      "yahooSymbol": "LYB",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MTB",
+      "security": "M&T Bank",
+      "yahooSymbol": "MTB",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MPC",
+      "security": "Marathon Petroleum",
+      "yahooSymbol": "MPC",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MAR",
+      "security": "Marriott International",
+      "yahooSymbol": "MAR",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MRSH",
+      "security": "Marsh McLennan",
+      "yahooSymbol": "MRSH",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MLM",
+      "security": "Martin Marietta Materials",
+      "yahooSymbol": "MLM",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MRVL",
+      "security": "Marvell Technology",
+      "yahooSymbol": "MRVL",
+      "sector": "Technology",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MAS",
+      "security": "Masco",
+      "yahooSymbol": "MAS",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MA",
+      "security": "Mastercard",
+      "yahooSymbol": "MA",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MKC",
+      "security": "McCormick & Company",
+      "yahooSymbol": "MKC",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MCD",
+      "security": "McDonald's",
+      "yahooSymbol": "MCD",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MCK",
+      "security": "McKesson Corporation",
+      "yahooSymbol": "MCK",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MDT",
+      "security": "Medtronic",
+      "yahooSymbol": "MDT",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MELI",
+      "security": "Mercado Libre",
+      "yahooSymbol": "MELI",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MRK",
+      "security": "Merck & Co.",
+      "yahooSymbol": "MRK",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "META",
+      "security": "Meta Platforms",
+      "yahooSymbol": "META",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MET",
+      "security": "MetLife",
+      "yahooSymbol": "MET",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MTD",
+      "security": "Mettler Toledo",
+      "yahooSymbol": "MTD",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MGM",
+      "security": "MGM Resorts",
+      "yahooSymbol": "MGM",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MCHP",
+      "security": "Microchip Technology",
+      "yahooSymbol": "MCHP",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MU",
+      "security": "Micron Technology",
+      "yahooSymbol": "MU",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MSFT",
+      "security": "Microsoft",
+      "yahooSymbol": "MSFT",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MSTR",
+      "security": "MicroStrategy",
+      "yahooSymbol": "MSTR",
+      "sector": "Technology",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MAA",
+      "security": "Mid-America Apartment Communities",
+      "yahooSymbol": "MAA",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MRNA",
+      "security": "Moderna",
+      "yahooSymbol": "MRNA",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TAP",
+      "security": "Molson Coors Beverage Company",
+      "yahooSymbol": "TAP",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MDLZ",
+      "security": "Mondelez International",
+      "yahooSymbol": "MDLZ",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MPWR",
+      "security": "Monolithic Power Systems",
+      "yahooSymbol": "MPWR",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MNST",
+      "security": "Monster Beverage",
+      "yahooSymbol": "MNST",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "MCO",
+      "security": "Moody's Corporation",
+      "yahooSymbol": "MCO",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MS",
+      "security": "Morgan Stanley",
+      "yahooSymbol": "MS",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MOS",
+      "security": "Mosaic Company (The)",
+      "yahooSymbol": "MOS",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MSI",
+      "security": "Motorola Solutions",
+      "yahooSymbol": "MSI",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "MSCI",
+      "security": "MSCI Inc.",
+      "yahooSymbol": "MSCI",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NDAQ",
+      "security": "Nasdaq, Inc.",
+      "yahooSymbol": "NDAQ",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NTAP",
+      "security": "NetApp",
+      "yahooSymbol": "NTAP",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NFLX",
+      "security": "Netflix",
+      "yahooSymbol": "NFLX",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "NEM",
+      "security": "Newmont",
+      "yahooSymbol": "NEM",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NWSA",
+      "security": "News Corp (Class A)",
+      "yahooSymbol": "NWSA",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NWS",
+      "security": "News Corp (Class B)",
+      "yahooSymbol": "NWS",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NEE",
+      "security": "NextEra Energy",
+      "yahooSymbol": "NEE",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NKE",
+      "security": "Nike, Inc.",
+      "yahooSymbol": "NKE",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NI",
+      "security": "NiSource",
+      "yahooSymbol": "NI",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NDSN",
+      "security": "Nordson Corporation",
+      "yahooSymbol": "NDSN",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NSC",
+      "security": "Norfolk Southern",
+      "yahooSymbol": "NSC",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NTRS",
+      "security": "Northern Trust",
+      "yahooSymbol": "NTRS",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NOC",
+      "security": "Northrop Grumman",
+      "yahooSymbol": "NOC",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NCLH",
+      "security": "Norwegian Cruise Line Holdings",
+      "yahooSymbol": "NCLH",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NRG",
+      "security": "NRG Energy",
+      "yahooSymbol": "NRG",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NUE",
+      "security": "Nucor",
+      "yahooSymbol": "NUE",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NVDA",
+      "security": "Nvidia",
+      "yahooSymbol": "NVDA",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "NVR",
+      "security": "NVR, Inc.",
+      "yahooSymbol": "NVR",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NXPI",
+      "security": "NXP Semiconductors",
+      "yahooSymbol": "NXPI",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "ORLY",
+      "security": "O’Reilly Automotive",
+      "yahooSymbol": "ORLY",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "OXY",
+      "security": "Occidental Petroleum",
+      "yahooSymbol": "OXY",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ODFL",
+      "security": "Old Dominion",
+      "yahooSymbol": "ODFL",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "OMC",
+      "security": "Omnicom Group",
+      "yahooSymbol": "OMC",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ON",
+      "security": "ON Semiconductor",
+      "yahooSymbol": "ON",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "OKE",
+      "security": "Oneok",
+      "yahooSymbol": "OKE",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ORCL",
+      "security": "Oracle Corporation",
+      "yahooSymbol": "ORCL",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "OTIS",
+      "security": "Otis Worldwide",
+      "yahooSymbol": "OTIS",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PCAR",
+      "security": "Paccar",
+      "yahooSymbol": "PCAR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PKG",
+      "security": "Packaging Corporation of America",
+      "yahooSymbol": "PKG",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PLTR",
+      "security": "Palantir Technologies",
+      "yahooSymbol": "PLTR",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PANW",
+      "security": "Palo Alto Networks",
+      "yahooSymbol": "PANW",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PSKY",
+      "security": "Paramount Skydance Corporation",
+      "yahooSymbol": "PSKY",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PH",
+      "security": "Parker Hannifin",
+      "yahooSymbol": "PH",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PAYX",
+      "security": "Paychex",
+      "yahooSymbol": "PAYX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PYPL",
+      "security": "PayPal",
+      "yahooSymbol": "PYPL",
+      "sector": "Financials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PDD",
+      "security": "PDD Holdings",
+      "yahooSymbol": "PDD",
+      "sector": "Technology",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PNR",
+      "security": "Pentair",
+      "yahooSymbol": "PNR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PEP",
+      "security": "PepsiCo",
+      "yahooSymbol": "PEP",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PFE",
+      "security": "Pfizer",
+      "yahooSymbol": "PFE",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PCG",
+      "security": "PG&E Corporation",
+      "yahooSymbol": "PCG",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PM",
+      "security": "Philip Morris International",
+      "yahooSymbol": "PM",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PSX",
+      "security": "Phillips 66",
+      "yahooSymbol": "PSX",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PNW",
+      "security": "Pinnacle West Capital",
+      "yahooSymbol": "PNW",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PNC",
+      "security": "PNC Financial Services",
+      "yahooSymbol": "PNC",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "POOL",
+      "security": "Pool Corporation",
+      "yahooSymbol": "POOL",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PPG",
+      "security": "PPG Industries",
+      "yahooSymbol": "PPG",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PPL",
+      "security": "PPL Corporation",
+      "yahooSymbol": "PPL",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PFG",
+      "security": "Principal Financial Group",
+      "yahooSymbol": "PFG",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PG",
+      "security": "Procter & Gamble",
+      "yahooSymbol": "PG",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PGR",
+      "security": "Progressive Corporation",
+      "yahooSymbol": "PGR",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PLD",
+      "security": "Prologis",
+      "yahooSymbol": "PLD",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PRU",
+      "security": "Prudential Financial",
+      "yahooSymbol": "PRU",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PTC",
+      "security": "PTC Inc.",
+      "yahooSymbol": "PTC",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PEG",
+      "security": "Public Service Enterprise Group",
+      "yahooSymbol": "PEG",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PSA",
+      "security": "Public Storage",
+      "yahooSymbol": "PSA",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "PHM",
+      "security": "PulteGroup",
+      "yahooSymbol": "PHM",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "Q",
+      "security": "Qnity Electronics",
+      "yahooSymbol": "Q",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "QCOM",
+      "security": "Qualcomm",
+      "yahooSymbol": "QCOM",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "PWR",
+      "security": "Quanta Services",
+      "yahooSymbol": "PWR",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "DGX",
+      "security": "Quest Diagnostics",
+      "yahooSymbol": "DGX",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "RL",
+      "security": "Ralph Lauren Corporation",
+      "yahooSymbol": "RL",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "RJF",
+      "security": "Raymond James Financial",
+      "yahooSymbol": "RJF",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "O",
+      "security": "Realty Income",
+      "yahooSymbol": "O",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "REG",
+      "security": "Regency Centers",
+      "yahooSymbol": "REG",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "REGN",
+      "security": "Regeneron Pharmaceuticals",
+      "yahooSymbol": "REGN",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "RF",
+      "security": "Regions Financial Corporation",
+      "yahooSymbol": "RF",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "RSG",
+      "security": "Republic Services",
+      "yahooSymbol": "RSG",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "RMD",
+      "security": "ResMed",
+      "yahooSymbol": "RMD",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "RVTY",
+      "security": "Revvity",
+      "yahooSymbol": "RVTY",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "HOOD",
+      "security": "Robinhood Markets",
+      "yahooSymbol": "HOOD",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ROK",
+      "security": "Rockwell Automation",
+      "yahooSymbol": "ROK",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ROL",
+      "security": "Rollins, Inc.",
+      "yahooSymbol": "ROL",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ROP",
+      "security": "Roper Technologies",
+      "yahooSymbol": "ROP",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "ROST",
+      "security": "Ross Stores",
+      "yahooSymbol": "ROST",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "RCL",
+      "security": "Royal Caribbean Group",
+      "yahooSymbol": "RCL",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "RTX",
+      "security": "RTX Corporation",
+      "yahooSymbol": "RTX",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SPGI",
+      "security": "S&P Global",
+      "yahooSymbol": "SPGI",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "CRM",
+      "security": "Salesforce",
+      "yahooSymbol": "CRM",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SNDK",
+      "security": "Sandisk",
+      "yahooSymbol": "SNDK",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SBAC",
+      "security": "SBA Communications",
+      "yahooSymbol": "SBAC",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SLB",
+      "security": "Schlumberger",
+      "yahooSymbol": "SLB",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "STX",
+      "security": "Seagate Technology",
+      "yahooSymbol": "STX",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "SRE",
+      "security": "Sempra",
+      "yahooSymbol": "SRE",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "NOW",
+      "security": "ServiceNow",
+      "yahooSymbol": "NOW",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SHW",
+      "security": "Sherwin-Williams",
+      "yahooSymbol": "SHW",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SHOP",
+      "security": "Shopify",
+      "yahooSymbol": "SHOP",
+      "sector": "Technology",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "SPG",
+      "security": "Simon Property Group",
+      "yahooSymbol": "SPG",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SWKS",
+      "security": "Skyworks Solutions",
+      "yahooSymbol": "SWKS",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SW",
+      "security": "Smurfit Westrock",
+      "yahooSymbol": "SW",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SNA",
+      "security": "Snap-on",
+      "yahooSymbol": "SNA",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SOLV",
+      "security": "Solventum",
+      "yahooSymbol": "SOLV",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SO",
+      "security": "Southern Company",
+      "yahooSymbol": "SO",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "LUV",
+      "security": "Southwest Airlines",
+      "yahooSymbol": "LUV",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SWK",
+      "security": "Stanley Black & Decker",
+      "yahooSymbol": "SWK",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SBUX",
+      "security": "Starbucks",
+      "yahooSymbol": "SBUX",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "STT",
+      "security": "State Street Corporation",
+      "yahooSymbol": "STT",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "STLD",
+      "security": "Steel Dynamics",
+      "yahooSymbol": "STLD",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "STE",
+      "security": "Steris",
+      "yahooSymbol": "STE",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SYK",
+      "security": "Stryker Corporation",
+      "yahooSymbol": "SYK",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SMCI",
+      "security": "Supermicro",
+      "yahooSymbol": "SMCI",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SYF",
+      "security": "Synchrony Financial",
+      "yahooSymbol": "SYF",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "SNPS",
+      "security": "Synopsys",
+      "yahooSymbol": "SNPS",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "SYY",
+      "security": "Sysco",
+      "yahooSymbol": "SYY",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TMUS",
+      "security": "T-Mobile US",
+      "yahooSymbol": "TMUS",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "TROW",
+      "security": "T. Rowe Price",
+      "yahooSymbol": "TROW",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TTWO",
+      "security": "Take-Two Interactive",
+      "yahooSymbol": "TTWO",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "TPR",
+      "security": "Tapestry, Inc.",
+      "yahooSymbol": "TPR",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TRGP",
+      "security": "Targa Resources",
+      "yahooSymbol": "TRGP",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TGT",
+      "security": "Target Corporation",
+      "yahooSymbol": "TGT",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TEL",
+      "security": "TE Connectivity",
+      "yahooSymbol": "TEL",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TDY",
+      "security": "Teledyne Technologies",
+      "yahooSymbol": "TDY",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TER",
+      "security": "Teradyne",
+      "yahooSymbol": "TER",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TSLA",
+      "security": "Tesla, Inc.",
+      "yahooSymbol": "TSLA",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "TXN",
+      "security": "Texas Instruments",
+      "yahooSymbol": "TXN",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "TPL",
+      "security": "Texas Pacific Land Corporation",
+      "yahooSymbol": "TPL",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TXT",
+      "security": "Textron",
+      "yahooSymbol": "TXT",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TMO",
+      "security": "Thermo Fisher Scientific",
+      "yahooSymbol": "TMO",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TRI",
+      "security": "Thomson Reuters",
+      "yahooSymbol": "TRI",
+      "sector": "Technology",
+      "indexes": [
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "TJX",
+      "security": "TJX Companies",
+      "yahooSymbol": "TJX",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TKO",
+      "security": "TKO Group Holdings",
+      "yahooSymbol": "TKO",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TSCO",
+      "security": "Tractor Supply",
+      "yahooSymbol": "TSCO",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TTD",
+      "security": "Trade Desk (The)",
+      "yahooSymbol": "TTD",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TT",
+      "security": "Trane Technologies",
+      "yahooSymbol": "TT",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TDG",
+      "security": "TransDigm Group",
+      "yahooSymbol": "TDG",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TRV",
+      "security": "Travelers Companies (The)",
+      "yahooSymbol": "TRV",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TRMB",
+      "security": "Trimble Inc.",
+      "yahooSymbol": "TRMB",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TFC",
+      "security": "Truist Financial",
+      "yahooSymbol": "TFC",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TYL",
+      "security": "Tyler Technologies",
+      "yahooSymbol": "TYL",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "TSN",
+      "security": "Tyson Foods",
+      "yahooSymbol": "TSN",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "USB",
+      "security": "U.S. Bancorp",
+      "yahooSymbol": "USB",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "UBER",
+      "security": "Uber",
+      "yahooSymbol": "UBER",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "UDR",
+      "security": "UDR, Inc.",
+      "yahooSymbol": "UDR",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "ULTA",
+      "security": "Ulta Beauty",
+      "yahooSymbol": "ULTA",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "UNP",
+      "security": "Union Pacific Corporation",
+      "yahooSymbol": "UNP",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "UAL",
+      "security": "United Airlines Holdings",
+      "yahooSymbol": "UAL",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "UPS",
+      "security": "United Parcel Service",
+      "yahooSymbol": "UPS",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "URI",
+      "security": "United Rentals",
+      "yahooSymbol": "URI",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "UNH",
+      "security": "UnitedHealth Group",
+      "yahooSymbol": "UNH",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "UHS",
+      "security": "Universal Health Services",
+      "yahooSymbol": "UHS",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VLO",
+      "security": "Valero Energy",
+      "yahooSymbol": "VLO",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VTR",
+      "security": "Ventas",
+      "yahooSymbol": "VTR",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VLTO",
+      "security": "Veralto",
+      "yahooSymbol": "VLTO",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VRSN",
+      "security": "Verisign",
+      "yahooSymbol": "VRSN",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VRSK",
+      "security": "Verisk Analytics",
+      "yahooSymbol": "VRSK",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "VZ",
+      "security": "Verizon",
+      "yahooSymbol": "VZ",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VRTX",
+      "security": "Vertex Pharmaceuticals",
+      "yahooSymbol": "VRTX",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "VRT",
+      "security": "Vertiv",
+      "yahooSymbol": "VRT",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VTRS",
+      "security": "Viatris",
+      "yahooSymbol": "VTRS",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VICI",
+      "security": "Vici Properties",
+      "yahooSymbol": "VICI",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "V",
+      "security": "Visa Inc.",
+      "yahooSymbol": "V",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VST",
+      "security": "Vistra Corp.",
+      "yahooSymbol": "VST",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "VMC",
+      "security": "Vulcan Materials Company",
+      "yahooSymbol": "VMC",
+      "sector": "Materials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WRB",
+      "security": "W. R. Berkley Corporation",
+      "yahooSymbol": "WRB",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "GWW",
+      "security": "W. W. Grainger",
+      "yahooSymbol": "GWW",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WAB",
+      "security": "Wabtec",
+      "yahooSymbol": "WAB",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WMT",
+      "security": "Walmart",
+      "yahooSymbol": "WMT",
+      "sector": "Consumer Staples",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "DIS",
+      "security": "Walt Disney Company (The)",
+      "yahooSymbol": "DIS",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WBD",
+      "security": "Warner Bros. Discovery",
+      "yahooSymbol": "WBD",
+      "sector": "Communication Services",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "WM",
+      "security": "Waste Management",
+      "yahooSymbol": "WM",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WAT",
+      "security": "Waters Corporation",
+      "yahooSymbol": "WAT",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WEC",
+      "security": "WEC Energy Group",
+      "yahooSymbol": "WEC",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WFC",
+      "security": "Wells Fargo",
+      "yahooSymbol": "WFC",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WELL",
+      "security": "Welltower",
+      "yahooSymbol": "WELL",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WST",
+      "security": "West Pharmaceutical Services",
+      "yahooSymbol": "WST",
+      "sector": "Health Care",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WDC",
+      "security": "Western Digital",
+      "yahooSymbol": "WDC",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "WY",
+      "security": "Weyerhaeuser",
+      "yahooSymbol": "WY",
+      "sector": "Real Estate",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WMB",
+      "security": "Williams Companies",
+      "yahooSymbol": "WMB",
+      "sector": "Energy",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WSM",
+      "security": "Williams-Sonoma, Inc.",
+      "yahooSymbol": "WSM",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WTW",
+      "security": "Willis Towers Watson",
+      "yahooSymbol": "WTW",
+      "sector": "Financials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "WDAY",
+      "security": "Workday, Inc.",
+      "yahooSymbol": "WDAY",
+      "sector": "Information Technology",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "WYNN",
+      "security": "Wynn Resorts",
+      "yahooSymbol": "WYNN",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "XEL",
+      "security": "Xcel Energy",
+      "yahooSymbol": "XEL",
+      "sector": "Utilities",
+      "indexes": [
+        "sp500",
+        "nasdaq100"
+      ],
+      "indexLabels": [
+        "S&P 500",
+        "Nasdaq-100"
+      ],
+      "hasDedicatedModel": true
+    },
+    {
+      "symbol": "XYL",
+      "security": "Xylem Inc.",
+      "yahooSymbol": "XYL",
+      "sector": "Industrials",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    },
+    {
+      "symbol": "YUM",
+      "security": "Yum! Brands",
+      "yahooSymbol": "YUM",
+      "sector": "Consumer Discretionary",
+      "indexes": [
+        "sp500"
+      ],
+      "indexLabels": [
+        "S&P 500"
+      ],
+      "hasDedicatedModel": false
+    }
+  ]
+}

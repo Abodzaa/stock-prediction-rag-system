@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /d D:\\\\Boodyyyy)",
+      "Bash(dir /b)"
+    ]
+  }
+}

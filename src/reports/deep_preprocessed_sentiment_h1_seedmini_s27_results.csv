@@ -1,0 +1,2 @@
+model_name,feature_group,lag_window,hidden_size,lr,epochs,patience,batch_size,target,status,note,rmse,mae,directional_accuracy,sharpe,n_rows,n_features,seq_len,n_test_total,avg_epochs_trained,artifact_path
+LSTM,G5_sentiment_only,64,32,0.0005,40,8,64,target_h1,ok,,0.01663336157798767,0.011018753983080387,0.5793650793650794,0.8474342447878981,5286,12,64,126,10.0,artifacts\models\deep_preprocessed_sentiment_seedmini_h1\target_h1\target_h1_G5_sentiment_only_LSTM_lag64_h32_lr0.0005_e40_p8.pt

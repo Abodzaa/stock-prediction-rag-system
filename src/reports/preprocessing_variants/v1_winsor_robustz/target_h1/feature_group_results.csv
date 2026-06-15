@@ -1,0 +1,4 @@
+feature_group,best_model_family,lag_window,epochs,patience,rmse,mae,directional_accuracy,sharpe,n_features,n_rows,n_test_total,artifact_path
+G1_price_only,elastic_net,0,120,5,0.02038375113644967,0.014005888138856358,0.5132769216876749,0.15300804418344172,8,2461082,188259,artifacts\models\preprocessing_variants\v1_winsor_robustz\target_h1\target_h1\target_h1_G1_price_only_elastic_net_lag0_e120_p5.joblib
+G2_price_technical,elastic_net,0,120,5,0.02038342166402133,0.014005725948016938,0.5136381261984819,0.17014893304804615,17,2461082,188259,artifacts\models\preprocessing_variants\v1_winsor_robustz\target_h1\target_h1\target_h1_G2_price_technical_elastic_net_lag0_e120_p5.joblib
+G3_plus_panel_breadth,elastic_net,0,120,5,0.020384112042307962,0.014006364516557889,0.5134628357741197,0.1816155097884156,22,2461082,188259,artifacts\models\preprocessing_variants\v1_winsor_robustz\target_h1\target_h1\target_h1_G3_plus_panel_breadth_elastic_net_lag0_e120_p5.joblib

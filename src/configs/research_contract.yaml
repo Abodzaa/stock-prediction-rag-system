@@ -1,0 +1,48 @@
+project:
+  name: sp500_multimodal_forecasting
+  version: 0.1.0
+  timezone_policy:
+    raw_ingestion: UTC
+    market_events: US/Eastern
+
+targets:
+  primary:
+    - id: spx_log_return_h1
+      description: 1-day ahead log return of S&P 500 index
+      horizon_days: 1
+    - id: spx_log_return_h5
+      description: 5-day ahead log return of S&P 500 index
+      horizon_days: 5
+
+execution:
+  signal_time: market_close_t
+  execution_time: next_open_t_plus_1
+  benchmark: buy_and_hold_spx
+
+data:
+  sp500_raw_csv: data/raw_market/sp500_2006_2026.csv
+  metadata_json: data/metadata/sp500_2006_2026_metadata.json
+  checksum_txt: data/metadata/sp500_2006_2026_sha256.txt
+
+split_policy:
+  method: anchored_walk_forward
+  leakage_controls:
+    - feature_time_lte_decision_time
+    - no_random_shuffle_cv
+    - purged_validation_windows
+
+metrics:
+  regression:
+    - rmse
+    - mae
+  directional:
+    - directional_accuracy
+  portfolio:
+    - sharpe
+
+validation:
+  sentiment_required_tests:
+    - shuffled_sentiment_control
+    - sentiment_lag_minus_1_0_plus_1
+  macro_required_tests:
+    - shuffled_macro_control

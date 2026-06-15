@@ -1,0 +1,17 @@
+{
+  "method": "v3_rollmed_minmax",
+  "rows": 2461082,
+  "symbols": 499,
+  "date_min": "2005-01-03",
+  "date_max": "2026-04-02",
+  "feature_columns": 22,
+  "preprocessing": {
+    "denoising": [
+      "Per-symbol rolling median denoising (window=5)"
+    ],
+    "normalization": [
+      "Per-symbol min-max normalization to [-1, 1]"
+    ]
+  },
+  "output_csv": "data\\processed\\features\\research_features_panel_pre_v3.csv"
+}

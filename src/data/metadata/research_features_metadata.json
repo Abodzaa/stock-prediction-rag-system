@@ -1,0 +1,15 @@
+{
+  "rows": 5350,
+  "date_min": "2005-01-03",
+  "date_max": "2026-04-09",
+  "feature_counts": {
+    "g1": 8,
+    "g2": 9,
+    "g3": 7
+  },
+  "target_columns": [
+    "target_h1",
+    "target_h5"
+  ],
+  "output_csv": "data\\processed\\features\\research_features_daily.csv"
+}

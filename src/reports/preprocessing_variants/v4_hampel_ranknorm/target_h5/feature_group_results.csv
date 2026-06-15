@@ -1,0 +1,4 @@
+feature_group,best_model_family,lag_window,epochs,patience,rmse,mae,directional_accuracy,sharpe,n_features,n_rows,n_test_total,artifact_path
+G1_price_only,ridge,0,120,5,0.046382419505157556,0.03296812445732595,0.5220201955816189,0.418734631463275,8,2461082,188259,artifacts\models\preprocessing_variants\v4_hampel_ranknorm\target_h5\target_h5\target_h5_G1_price_only_ridge_lag0_e120_p5.joblib
+G2_price_technical,ridge,0,120,5,0.04638354822590453,0.032972424693978944,0.5195448823163833,0.37626277540669195,17,2461082,188259,artifacts\models\preprocessing_variants\v4_hampel_ranknorm\target_h5\target_h5\target_h5_G2_price_technical_ridge_lag0_e120_p5.joblib
+G3_plus_panel_breadth,ridge,0,120,5,0.04638301547580402,0.03297204872654958,0.5193324090747321,0.3852282093586637,22,2461082,188259,artifacts\models\preprocessing_variants\v4_hampel_ranknorm\target_h5\target_h5\target_h5_G3_plus_panel_breadth_ridge_lag0_e120_p5.joblib

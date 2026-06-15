@@ -1,0 +1,54 @@
+{
+  "target": "target_h1",
+  "winner": {
+    "pipeline": "finbert",
+    "track": "baseline",
+    "model_c_rmse": 0.0203879790978675,
+    "model_d_rmse": 0.0203795405281348,
+    "model_e_rmse": 0.0203873653522699,
+    "model_c_dir_acc": 0.5125385771729373,
+    "model_c_sharpe": 0.1417613000865053,
+    "model_c_family": "elastic_net",
+    "model_c_note": "Phase 8 baseline if using FinBERT prefix; challenger if using RAG prefix.",
+    "model_family_results": "reports\\sentiment_eval_finbert_target_h1\\model_family_results.csv",
+    "model_set_results": "reports\\sentiment_eval_finbert_target_h1\\model_set_results.csv",
+    "delta_c_vs_d_rmse": 8.43856973269802e-06,
+    "delta_c_vs_e_rmse": 6.137455976010231e-07,
+    "_rank_rmse": 0.0203879790978675
+  },
+  "recommended_baseline": "finbert",
+  "recommended_challenger": "rag",
+  "rows": [
+    {
+      "pipeline": "finbert",
+      "track": "baseline",
+      "model_c_rmse": 0.0203879790978675,
+      "model_d_rmse": 0.0203795405281348,
+      "model_e_rmse": 0.0203873653522699,
+      "model_c_dir_acc": 0.5125385771729373,
+      "model_c_sharpe": 0.1417613000865053,
+      "model_c_family": "elastic_net",
+      "model_c_note": "Phase 8 baseline if using FinBERT prefix; challenger if using RAG prefix.",
+      "model_family_results": "reports\\sentiment_eval_finbert_target_h1\\model_family_results.csv",
+      "model_set_results": "reports\\sentiment_eval_finbert_target_h1\\model_set_results.csv",
+      "delta_c_vs_d_rmse": 8.43856973269802e-06,
+      "delta_c_vs_e_rmse": 6.137455976010231e-07
+    },
+    {
+      "pipeline": "rag",
+      "track": "challenger",
+      "model_c_rmse": 0.0203879790978675,
+      "model_d_rmse": 0.0203795195492289,
+      "model_e_rmse": 0.0203873653522699,
+      "model_c_dir_acc": 0.5125385771729373,
+      "model_c_sharpe": 0.1417613000865053,
+      "model_c_family": "elastic_net",
+      "model_c_note": "Phase 8 baseline if using FinBERT prefix; challenger if using RAG prefix.",
+      "model_family_results": "reports\\sentiment_eval_rag_target_h1\\model_family_results.csv",
+      "model_set_results": "reports\\sentiment_eval_rag_target_h1\\model_set_results.csv",
+      "delta_c_vs_d_rmse": 8.459548638598685e-06,
+      "delta_c_vs_e_rmse": 6.137455976010231e-07
+    }
+  ],
+  "selection_rule": "Minimum Model_C_sentiment_only RMSE; tie-break by higher directional accuracy."
+}

@@ -1,0 +1,4 @@
+feature_group,best_model_family,lag_window,epochs,patience,rmse,mae,directional_accuracy,sharpe,n_features,n_rows,n_test_total,artifact_path
+G1_price_only,hist_gbr,10,200,10,0.022702730405706483,0.016901153537723458,0.6031746031746031,1.830367457198803,88,5026,1260,artifacts/models/target_h5/target_h5_G1_price_only_hist_gbr_lag10_e200_p10.joblib
+G2_price_technical,hist_gbr,10,200,10,0.023612984200502042,0.017600512673458378,0.5531746031746032,1.2441919761906794,187,5026,1260,artifacts/models/target_h5/target_h5_G2_price_technical_hist_gbr_lag10_e200_p10.joblib
+G3_plus_breadth,elastic_net,10,300,20,0.024565336498802447,0.017847528038288336,0.5261904761904762,0.36267249371644644,264,5026,1260,artifacts/models/target_h5/target_h5_G3_plus_breadth_elastic_net_lag10_e300_p20.joblib

@@ -1,0 +1,56 @@
+{
+  "winner": "tie",
+  "selection_rule": "lowest average Model_C RMSE across h1 and h5",
+  "per_target_rows": [
+    {
+      "target": "h1",
+      "pipeline": "finbert",
+      "model_c_rmse": 0.0081486435787639,
+      "model_c_dir_acc": 0.5666666666666667,
+      "model_c_sharpe": 0.4987477606501969,
+      "delta_c_vs_d_rmse": 0.0004496906684123003,
+      "delta_c_vs_e_rmse": 0.0004496906684123003
+    },
+    {
+      "target": "h1",
+      "pipeline": "rag",
+      "model_c_rmse": 0.0081486435787639,
+      "model_c_dir_acc": 0.5666666666666667,
+      "model_c_sharpe": 0.4987477606501969,
+      "delta_c_vs_d_rmse": 0.0004496906684123003,
+      "delta_c_vs_e_rmse": 0.0004496906684123003
+    },
+    {
+      "target": "h5",
+      "pipeline": "finbert",
+      "model_c_rmse": 0.0170163897704569,
+      "model_c_dir_acc": 0.6333333333333333,
+      "model_c_sharpe": 2.12616262894767,
+      "delta_c_vs_d_rmse": -4.913114317489989e-05,
+      "delta_c_vs_e_rmse": -4.913114317489989e-05
+    },
+    {
+      "target": "h5",
+      "pipeline": "rag",
+      "model_c_rmse": 0.0170163897704569,
+      "model_c_dir_acc": 0.6333333333333333,
+      "model_c_sharpe": 2.12616262894767,
+      "delta_c_vs_d_rmse": -4.913114317489989e-05,
+      "delta_c_vs_e_rmse": -4.913114317489989e-05
+    }
+  ],
+  "aggregate": [
+    {
+      "pipeline": "finbert",
+      "avg_model_c_rmse": 0.0125825166746104,
+      "avg_model_c_dir_acc": 0.6,
+      "avg_model_c_sharpe": 1.3124551947989334
+    },
+    {
+      "pipeline": "rag",
+      "avg_model_c_rmse": 0.0125825166746104,
+      "avg_model_c_dir_acc": 0.6,
+      "avg_model_c_sharpe": 1.3124551947989334
+    }
+  ]
+}

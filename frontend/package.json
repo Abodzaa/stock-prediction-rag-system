@@ -1,0 +1,23 @@
+{
+  "name": "equity-rag-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "gen:tickers": "node ./scripts/build-constituents.mjs",
+    "predev": "npm run gen:tickers",
+    "dev": "vite",
+    "prebuild": "npm run gen:tickers",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "test:smoke": "node --test ./tests/**/*.test.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}

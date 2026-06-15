@@ -1,0 +1,10 @@
+# Optional deep-learning stack for plan Phase 4 model families.
+# Note: availability depends on Python version support.
+torch>=2.3.0
+neuralforecast>=1.7.0; python_version < "3.13"
+pytorch-lightning>=2.3.0
+optuna>=3.6.0
+transformers>=4.44.0
+sentence-transformers>=3.0.0
+accelerate>=0.33.0
+google-genai>=1.0.0

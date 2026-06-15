@@ -1,0 +1,6 @@
+model,status,model_family,lag_window,epochs,patience,rmse,mae,directional_accuracy,sharpe,n_features,n_rows,n_test_total,note,artifact_path
+Model_A_price_only,ok,random_forest,30,300,20,0.01059469895466432,0.007550328333054347,0.5373015873015873,0.5955417341691773,248,5030,1260,best configuration on G1,artifacts/models/target_h1/target_h1_G1_price_only_random_forest_lag30_e300_p20.joblib
+Model_B_price_full_available,ok,hist_gbr,10,200,20,0.010668644923649667,0.007609936301936658,0.530952380952381,0.6062134448999337,264,5030,1260,best configuration on G1+G2+G3 available in workspace,artifacts/models/target_h1/target_h1_G3_plus_breadth_hist_gbr_lag10_e200_p20.joblib
+Model_C_sentiment_only,not_run,,0,0,0,,,,,0,0,0,No sentiment features with prefix g5_sent_ were found in features CSV.,
+Model_D_price_shuffled_sentiment,not_run,,0,0,0,,,,,0,0,0,No sentiment features with prefix g5_sent_ were found in features CSV.,
+Model_E_price_lagged_sentiment,not_run,,0,0,0,,,,,0,0,0,No sentiment features with prefix g5_sent_ were found in features CSV.,

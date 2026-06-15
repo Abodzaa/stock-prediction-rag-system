@@ -1,0 +1,60 @@
+{
+  "target": "target_h1",
+  "device": "cuda",
+  "trial_counts": {
+    "total": 1,
+    "ok": 1,
+    "error": 0
+  },
+  "best_overall": [
+    {
+      "model_name": "LSTM",
+      "feature_group": "G5_sentiment_only",
+      "lag_window": 64,
+      "hidden_size": 32,
+      "lr": 0.0005,
+      "epochs": 40,
+      "patience": 8,
+      "batch_size": 64,
+      "target": "target_h1",
+      "status": "ok",
+      "note": "",
+      "rmse": 0.021057264879345894,
+      "mae": 0.013960075564682484,
+      "directional_accuracy": 0.5555555555555556,
+      "sharpe": 0.8534810507453804,
+      "n_rows": 5286,
+      "n_features": 12,
+      "seq_len": 64,
+      "n_test_total": 126,
+      "avg_epochs_trained": 23.0,
+      "artifact_path": "artifacts\\models\\deep_preprocessed_sentiment_seedmini_h1\\target_h1\\target_h1_G5_sentiment_only_LSTM_lag64_h32_lr0.0005_e40_p8.pt"
+    }
+  ],
+  "best_primary": [],
+  "best_baseline": [
+    {
+      "model_name": "LSTM",
+      "feature_group": "G5_sentiment_only",
+      "lag_window": 64,
+      "hidden_size": 32,
+      "lr": 0.0005,
+      "epochs": 40,
+      "patience": 8,
+      "batch_size": 64,
+      "target": "target_h1",
+      "status": "ok",
+      "note": "",
+      "rmse": 0.021057264879345894,
+      "mae": 0.013960075564682484,
+      "directional_accuracy": 0.5555555555555556,
+      "sharpe": 0.8534810507453804,
+      "n_rows": 5286,
+      "n_features": 12,
+      "seq_len": 64,
+      "n_test_total": 126,
+      "avg_epochs_trained": 23.0,
+      "artifact_path": "artifacts\\models\\deep_preprocessed_sentiment_seedmini_h1\\target_h1\\target_h1_G5_sentiment_only_LSTM_lag64_h32_lr0.0005_e40_p8.pt"
+    }
+  ]
+}

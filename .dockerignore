@@ -1,0 +1,12 @@
+# Keep the 500MB+ trained artifacts out of the image; they are mounted as a volume.
+src/artifacts/
+src/data/raw_market/
+src/data/raw_equities/
+src/data/raw_news/
+src/data/processed/
+**/__pycache__/
+**/*.pyc
+frontend/node_modules/
+frontend/dist/
+.git/
+*.zip

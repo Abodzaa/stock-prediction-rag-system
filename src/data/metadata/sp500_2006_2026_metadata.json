@@ -1,0 +1,22 @@
+{
+  "source": "yfinance",
+  "ticker": "^GSPC",
+  "downloaded_at_utc": "2026-04-12T12:04:04Z",
+  "requested_start": "2005-01-01",
+  "requested_end": "2026-04-12",
+  "row_count": 5351,
+  "date_min": "2005-01-03",
+  "date_max": "2026-04-10",
+  "columns": [
+    "Adj Close",
+    "Close",
+    "Dividends",
+    "High",
+    "Low",
+    "Open",
+    "Stock Splits",
+    "Volume"
+  ],
+  "csv_sha256": "391c5eb15cd421f1b987d8d726c9ace535d50659ebeb0d09ec1b46d04c509ba0",
+  "output_csv": "data\\raw_market\\sp500_2006_2026.csv"
+}

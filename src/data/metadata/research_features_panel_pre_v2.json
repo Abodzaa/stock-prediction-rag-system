@@ -1,0 +1,17 @@
+{
+  "method": "v2_ema_standardz",
+  "rows": 2461082,
+  "symbols": 499,
+  "date_min": "2005-01-03",
+  "date_max": "2026-04-02",
+  "feature_columns": 22,
+  "preprocessing": {
+    "denoising": [
+      "Per-symbol EMA smoothing (span=5)"
+    ],
+    "normalization": [
+      "Per-symbol standard z-score using mean/std"
+    ]
+  },
+  "output_csv": "data\\processed\\features\\research_features_panel_pre_v2.csv"
+}

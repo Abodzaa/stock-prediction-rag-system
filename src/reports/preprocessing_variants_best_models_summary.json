@@ -1,0 +1,112 @@
+[
+  {
+    "variant": "v1_winsor_robustz",
+    "target": "target_h1",
+    "status": "ok",
+    "feature_group": "G2_price_technical",
+    "model_family": "elastic_net",
+    "rmse": 0.0203834216640213,
+    "directional_accuracy": 0.5136381261984819,
+    "sharpe": 0.1701489330480461,
+    "model_family_results": "reports\\preprocessing_variants\\v1_winsor_robustz\\target_h1\\model_family_results.csv"
+  },
+  {
+    "variant": "v1_winsor_robustz",
+    "target": "target_h5",
+    "status": "ok",
+    "feature_group": "G1_price_only",
+    "model_family": "elastic_net",
+    "rmse": 0.0464114030578901,
+    "directional_accuracy": 0.5170058270786523,
+    "sharpe": 0.2515920962189338,
+    "model_family_results": "reports\\preprocessing_variants\\v1_winsor_robustz\\target_h5\\model_family_results.csv"
+  },
+  {
+    "variant": "v2_ema_standardz",
+    "target": "target_h1",
+    "status": "ok",
+    "feature_group": "G3_plus_panel_breadth",
+    "model_family": "hist_gbr",
+    "rmse": 0.0203224596874186,
+    "directional_accuracy": 0.508581263047185,
+    "sharpe": 0.2567728189863966,
+    "model_family_results": "reports\\preprocessing_variants\\v2_ema_standardz\\target_h1\\model_family_results.csv"
+  },
+  {
+    "variant": "v2_ema_standardz",
+    "target": "target_h5",
+    "status": "ok",
+    "feature_group": "G3_plus_panel_breadth",
+    "model_family": "elastic_net",
+    "rmse": 0.0464039102978352,
+    "directional_accuracy": 0.513717803664101,
+    "sharpe": 0.3258932300232808,
+    "model_family_results": "reports\\preprocessing_variants\\v2_ema_standardz\\target_h5\\model_family_results.csv"
+  },
+  {
+    "variant": "v3_rollmed_minmax",
+    "target": "target_h1",
+    "status": "ok",
+    "feature_group": "G3_plus_panel_breadth",
+    "model_family": "ridge",
+    "rmse": 0.0203787970148341,
+    "directional_accuracy": 0.5053569816051291,
+    "sharpe": 0.2554619166130178,
+    "model_family_results": "reports\\preprocessing_variants\\v3_rollmed_minmax\\target_h1\\model_family_results.csv"
+  },
+  {
+    "variant": "v3_rollmed_minmax",
+    "target": "target_h5",
+    "status": "ok",
+    "feature_group": "G2_price_technical",
+    "model_family": "elastic_net",
+    "rmse": 0.0463818202924551,
+    "directional_accuracy": 0.5179778921592062,
+    "sharpe": 0.5629870972067972,
+    "model_family_results": "reports\\preprocessing_variants\\v3_rollmed_minmax\\target_h5\\model_family_results.csv"
+  },
+  {
+    "variant": "v4_hampel_ranknorm",
+    "target": "target_h1",
+    "status": "ok",
+    "feature_group": "G1_price_only",
+    "model_family": "ridge",
+    "rmse": 0.0203715630697479,
+    "directional_accuracy": 0.5168039774990837,
+    "sharpe": 0.5366168392244448,
+    "model_family_results": "reports\\preprocessing_variants\\v4_hampel_ranknorm\\target_h1\\model_family_results.csv"
+  },
+  {
+    "variant": "v4_hampel_ranknorm",
+    "target": "target_h5",
+    "status": "ok",
+    "feature_group": "G1_price_only",
+    "model_family": "ridge",
+    "rmse": 0.0463824195051575,
+    "directional_accuracy": 0.5220201955816189,
+    "sharpe": 0.418734631463275,
+    "model_family_results": "reports\\preprocessing_variants\\v4_hampel_ranknorm\\target_h5\\model_family_results.csv"
+  },
+  {
+    "variant": "v5_iqrclip_log_cs_z",
+    "target": "target_h1",
+    "status": "ok",
+    "feature_group": "G1_price_only",
+    "model_family": "elastic_net",
+    "rmse": 0.0203869868985147,
+    "directional_accuracy": 0.5125385771729373,
+    "sharpe": 0.1417613000865053,
+    "model_family_results": "reports\\preprocessing_variants\\v5_iqrclip_log_cs_z\\target_h1\\model_family_results.csv"
+  },
+  {
+    "variant": "v5_iqrclip_log_cs_z",
+    "target": "target_h5",
+    "status": "ok",
+    "feature_group": "G2_price_technical",
+    "model_family": "hist_gbr",
+    "rmse": 0.0464178523449246,
+    "directional_accuracy": 0.518737483998109,
+    "sharpe": 0.2298544671715538,
+    "model_family_results": "reports\\preprocessing_variants\\v5_iqrclip_log_cs_z\\target_h5\\model_family_results.csv"
+  }
+]

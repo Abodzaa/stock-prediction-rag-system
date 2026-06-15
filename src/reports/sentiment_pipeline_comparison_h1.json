@@ -1,0 +1,49 @@
+{
+  "target": "target_h1",
+  "winner": {
+    "pipeline": "finbert",
+    "model_c_rmse": 0.0096592356552792,
+    "model_d_rmse": 0.0102062550196856,
+    "model_e_rmse": 0.0100096360713231,
+    "model_c_dir_acc": 0.4833333333333333,
+    "model_c_sharpe": -0.5803911299975251,
+    "model_c_family": "elastic_net",
+    "model_c_note": "best configuration on sentiment-only features (g5_sent_finbert_*)",
+    "model_family_results": "reports/sentiment_eval_finbert_target_h1/model_family_results.csv",
+    "model_set_results": "reports/sentiment_eval_finbert_target_h1/model_set_results.csv",
+    "delta_c_vs_d_rmse": -0.0005470193644064002,
+    "delta_c_vs_e_rmse": -0.00035040041604390143,
+    "_rank_rmse": 0.0096592356552792
+  },
+  "rows": [
+    {
+      "pipeline": "finbert",
+      "model_c_rmse": 0.0096592356552792,
+      "model_d_rmse": 0.0102062550196856,
+      "model_e_rmse": 0.0100096360713231,
+      "model_c_dir_acc": 0.4833333333333333,
+      "model_c_sharpe": -0.5803911299975251,
+      "model_c_family": "elastic_net",
+      "model_c_note": "best configuration on sentiment-only features (g5_sent_finbert_*)",
+      "model_family_results": "reports/sentiment_eval_finbert_target_h1/model_family_results.csv",
+      "model_set_results": "reports/sentiment_eval_finbert_target_h1/model_set_results.csv",
+      "delta_c_vs_d_rmse": -0.0005470193644064002,
+      "delta_c_vs_e_rmse": -0.00035040041604390143
+    },
+    {
+      "pipeline": "rag",
+      "model_c_rmse": 0.0096592356552792,
+      "model_d_rmse": 0.010168622073532,
+      "model_e_rmse": 0.0100096360713231,
+      "model_c_dir_acc": 0.4833333333333333,
+      "model_c_sharpe": -0.5803911299975251,
+      "model_c_family": "elastic_net",
+      "model_c_note": "best configuration on sentiment-only features (g5_sent_rag_*)",
+      "model_family_results": "reports/sentiment_eval_rag_target_h1/model_family_results.csv",
+      "model_set_results": "reports/sentiment_eval_rag_target_h1/model_set_results.csv",
+      "delta_c_vs_d_rmse": -0.000509386418252801,
+      "delta_c_vs_e_rmse": -0.00035040041604390143
+    }
+  ],
+  "selection_rule": "Minimum Model_C_sentiment_only RMSE; tie-break by higher directional accuracy."
+}

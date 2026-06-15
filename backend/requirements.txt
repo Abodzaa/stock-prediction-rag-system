@@ -1,0 +1,24 @@
+# --- API ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+sse-starlette>=2.1.0
+
+# --- model + data stack (pinned to match the trained artifacts) ---
+# Artifacts were serialized with numpy 2.x / scikit-learn >=1.7.2; matching here
+# avoids pickle/BitGenerator mismatches (notably for RandomForest).
+numpy>=2.0.0
+scipy>=1.13.0
+pandas>=2.2.0
+scikit-learn>=1.7.2
+joblib>=1.4.0
+torch>=2.3.0
+yfinance>=0.2.54
+requests>=2.32.0
+lxml>=5.3.0
+
+# --- RAG: embeddings, sentiment, vector store, LLM ---
+sentence-transformers>=3.0.0
+transformers>=4.44.0
+qdrant-client>=1.11.0
+groq>=0.11.0

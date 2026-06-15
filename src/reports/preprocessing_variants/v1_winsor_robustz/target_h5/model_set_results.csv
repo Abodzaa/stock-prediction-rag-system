@@ -1,0 +1,6 @@
+model,status,model_family,lag_window,epochs,patience,rmse,mae,directional_accuracy,sharpe,n_features,n_rows,n_test_total,note,artifact_path
+Model_A_price_only,ok,elastic_net,0,120,5,0.04641140305789018,0.03297816924427185,0.5170058270786523,0.2515920962189338,8,2461082,188259,best configuration on G1,artifacts\models\preprocessing_variants\v1_winsor_robustz\target_h5\target_h5\target_h5_G1_price_only_elastic_net_lag0_e120_p5.joblib
+Model_B_price_full_available,ok,elastic_net,0,120,5,0.04643198482800861,0.033005747737708625,0.5136540616916058,0.1610772813143725,22,2461082,188259,best configuration on G1+G2+G3 panel features,artifacts\models\preprocessing_variants\v1_winsor_robustz\target_h5\target_h5\target_h5_G3_plus_panel_breadth_elastic_net_lag0_e120_p5.joblib
+Model_C_sentiment_only,not_run,,0,0,0,,,,,0,0,0,No sentiment features with prefix g5_sent_ were found.,
+Model_D_price_shuffled_sentiment,not_run,,0,0,0,,,,,0,0,0,No sentiment features with prefix g5_sent_ were found.,
+Model_E_price_lagged_sentiment,not_run,,0,0,0,,,,,0,0,0,No sentiment features with prefix g5_sent_ were found.,

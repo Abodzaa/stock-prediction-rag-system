@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.venv_cpu/
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Build/dist
+build/
+dist/
+*.egg-info/
+
+# Local experiment outputs and heavy assets
+artifacts/
+data/raw_market/
+data/raw_equities/
+data/raw_news/
+data/processed/
+
+# Optional large standalone files
+SP500Full.csv
+
+# Logs
+*.log
+.env

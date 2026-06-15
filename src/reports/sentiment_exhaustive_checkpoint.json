@@ -1,0 +1,46 @@
+{
+  "completed_ids": [
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_180000__te_100000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_180000__te_70000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_260000__te_100000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_260000__te_70000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_180000__te_100000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_180000__te_70000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_260000__te_100000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_260000__te_70000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_180000__te_100000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_180000__te_70000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_260000__te_100000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_260000__te_70000",
+    "target_h1__m_elastic_net-ridge-hist_gbr__lag_0__e_150__p_10__tr_200000__te_80000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_180000__te_100000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_180000__te_70000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_260000__te_100000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_10__tr_260000__te_70000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_180000__te_100000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_180000__te_70000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_260000__te_100000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_20__tr_260000__te_70000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_180000__te_100000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_180000__te_70000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_260000__te_100000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_120__p_5__tr_260000__te_70000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_150__p_5__tr_180000__te_100000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_150__p_5__tr_180000__te_70000",
+    "target_h5__m_elastic_net-ridge-hist_gbr__lag_0__e_150__p_5__tr_260000__te_70000"
+  ],
+  "best_rmse_by_target": {
+    "target_h1": 0.0203878372048968,
+    "target_h5": 0.0464257281328487
+  },
+  "no_improve_streak_by_target": {
+    "target_h1": 12,
+    "target_h5": 12
+  },
+  "stopped_targets": [
+    "target_h1",
+    "target_h5"
+  ],
+  "started_at": "2026-04-13T05:31:21.039179Z",
+  "updated_at": "2026-04-13T08:17:29.046471+00:00"
+}

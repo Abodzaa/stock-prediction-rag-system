@@ -1,0 +1,15 @@
+{
+  "summary": {
+    "symbols_in_mapping": 500,
+    "files_checked": 500,
+    "status_ok": 466,
+    "status_warning": 34,
+    "status_error": 0,
+    "calendar_min": "2005-01-03",
+    "calendar_max": "2026-04-10",
+    "output_csv": "data\\metadata\\sp500_constituent_qa_report.csv"
+  },
+  "issue_counts": {
+    "missing_critical_values": 34
+  }
+}
