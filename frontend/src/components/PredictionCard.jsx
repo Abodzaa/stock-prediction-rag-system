@@ -12,6 +12,9 @@ export default function PredictionCard({
   companyProfile,
   selectedModel,
   selectedSymbol,
+  marketContext,
+  marketContextLoading,
+  evidenceSummary,
   onRetry,
   error,
 }) {
@@ -60,7 +63,7 @@ export default function PredictionCard({
 
         <div className="state-banner tone-ready" role="status">
           <div>
-            <strong>Run the signal to see direction, confidence, backtest quality, freshness, and explanation risk.</strong>
+            <strong>Run the signal to see direction, confidence, price context, backtest quality, and explanation risk.</strong>
             <p>Model signal only. Not financial advice. Use alongside independent due diligence and risk management.</p>
           </div>
         </div>
@@ -82,8 +85,9 @@ export default function PredictionCard({
     );
   }
 
-  const summary = buildPredictionSummary(prediction, selectedModel, companyProfile);
+  const summary = buildPredictionSummary(prediction, selectedModel, companyProfile, marketContext, evidenceSummary);
   const confidencePercent = Math.round((prediction.confidence ?? 0) * 100);
+  const priceContext = summary.priceContext;
 
   return (
     <section className="panel prediction-card" aria-label="Prediction results">
@@ -99,7 +103,7 @@ export default function PredictionCard({
             <span className="prediction-company">{summary.companyName}</span>
           </h2>
           <p className="prediction-subtitle">
-            {HORIZON_LABEL[prediction.horizon] || prediction.horizon} • {summary.sector}
+            {HORIZON_LABEL[prediction.horizon] || prediction.horizon} / {summary.sector}
           </p>
           <p className="signal-disclaimer">Model signal only. Not financial advice.</p>
         </div>
@@ -109,6 +113,95 @@ export default function PredictionCard({
           <strong className={`prediction-value tone-${summary.badge.tone}`}>{summary.predictedMove}</strong>
           <span className="prediction-asof">As of {formatDate(prediction.as_of)}</span>
         </div>
+      </div>
+
+      <div className="price-context-grid" aria-label="Price and decision context">
+        <article className="subpanel price-context-card">
+          <div className="subpanel-header">
+            <div>
+              <h3>Price context</h3>
+              <p className="muted small">Actual price levels, not just percentage move.</p>
+            </div>
+            {priceContext ? (
+              <span className={`status-chip volatility-chip tone-${summary.badge.tone}`}>
+                {priceContext.volatilityLabel}
+              </span>
+            ) : null}
+          </div>
+
+          {marketContextLoading && !priceContext ? (
+            <div className="explanation-skeleton" aria-hidden="true">
+              <span className="skeleton-line wide" />
+              <span className="skeleton-line" />
+              <span className="skeleton-line short" />
+            </div>
+          ) : priceContext ? (
+            <div className="price-stack">
+              <div className="price-stat-grid">
+                <PriceStat label="Current" value={priceContext.currentPriceLabel} note={`Last price on ${priceContext.priceAsOfLabel}`} />
+                <PriceStat label="Predicted" value={priceContext.predictedPriceLabel} note="Point estimate if the signal holds" />
+                <PriceStat label="Likely range" value={priceContext.rangeLabel} note="Illustrative range, not a guarantee" />
+              </div>
+
+              <div className="price-support-grid">
+                <article className="micro-card">
+                  <span className="metric-label">Volatility</span>
+                  <strong>{priceContext.volatilityLabel}</strong>
+                  <p className="metric-footnote">
+                    {priceContext.volatilityValueLabel} / {priceContext.volatilityDetail}
+                  </p>
+                </article>
+                <article className="micro-card">
+                  <span className="metric-label">Risk / reward example</span>
+                  <strong className={`tone-${priceContext.illustrativeDirection}`}>{priceContext.illustrativeReturnLabel}</strong>
+                  <p className="metric-footnote">If you invested $1,000 today and the prediction held exactly.</p>
+                </article>
+              </div>
+
+              {priceContext.upcomingEvents.length ? (
+                <div className="state-banner state-warning" role="alert">
+                  <div>
+                    <strong>Upcoming event within the forecast window</strong>
+                    <p>
+                      {priceContext.upcomingEvents.map((event) => `${event.label} (${formatDate(event.date)})`).join(" / ")}.
+                      Scheduled events can invalidate the signal quickly.
+                    </p>
+                  </div>
+                </div>
+              ) : null}
+
+              {priceContext.trackRecord ? (
+                <div className="state-banner tone-context" role="status">
+                  <div>
+                    <strong>{priceContext.trackRecord.detail}</strong>
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : (
+            <p className="muted small">Price context is unavailable right now.</p>
+          )}
+        </article>
+
+        <article className="subpanel price-chart-card">
+          <div className="subpanel-header">
+            <div>
+              <h3>Last 90 days</h3>
+              <p className="muted small">
+                {priceContext?.benchmarkSymbol ? `Ticker vs ${priceContext.benchmarkSymbol}` : "Recent price path"}
+              </p>
+            </div>
+          </div>
+          {priceContext?.priceHistory?.length ? (
+            <SparklinePanel
+              history={priceContext.priceHistory}
+              benchmark={priceContext.benchmarkHistory}
+              benchmarkLabel={priceContext.benchmarkSymbol}
+            />
+          ) : (
+            <p className="muted small">Historical chart unavailable.</p>
+          )}
+        </article>
       </div>
 
       <div className="metric-grid" aria-label="Prediction confidence and backtest metrics">
@@ -128,6 +221,12 @@ export default function PredictionCard({
             />
           </div>
           <p className="metric-footnote">{summary.confidenceState.label}</p>
+          {summary.reconciliation ? (
+            <div className={`reconciliation-note tone-${summary.reconciliation.tone}`} role="status">
+              <strong>{summary.reconciliation.text}</strong>
+              {summary.reconciliation.reminder ? <p>{summary.reconciliation.reminder}</p> : null}
+            </div>
+          ) : null}
         </article>
 
         <MetricCard
@@ -158,8 +257,15 @@ export default function PredictionCard({
         <MetricCard
           label="Forecast setup"
           value={selectedModel?.model_name || prediction.model_id}
-          note={`${selectedModel?.family || "Unknown family"} • ${selectedModel?.kind || "Unknown type"}`}
+          note={`${selectedModel?.family || "Unknown family"} / ${selectedModel?.kind || "Unknown type"}`}
         />
+      </div>
+
+      <div className="state-banner tone-context" role="status">
+        <div>
+          <strong>Plain-language backtest translation</strong>
+          <p>{summary.directionalAccuracyNarrative}</p>
+        </div>
       </div>
 
       <div className={`state-banner tone-${summary.confidenceState.tone}`} role="status">
@@ -233,4 +339,62 @@ function MetricCard({ label, value, note, tone = "default" }) {
       <span className="metric-footnote">{note}</span>
     </article>
   );
+}
+
+function PriceStat({ label, value, note }) {
+  return (
+    <article className="micro-card">
+      <span className="metric-label">{label}</span>
+      <strong>{value}</strong>
+      <p className="metric-footnote">{note}</p>
+    </article>
+  );
+}
+
+function SparklinePanel({ history, benchmark, benchmarkLabel }) {
+  const pricePath = buildPath(history.map((point) => point.close), 320, 140);
+  const benchmarkPath = benchmark?.length ? buildPath(normalizeComparisonSeries(history, benchmark), 320, 140) : "";
+  const firstPrice = history[0]?.close;
+  const lastPrice = history[history.length - 1]?.close;
+
+  return (
+    <div className="sparkline-shell">
+      <svg
+        className="sparkline-chart"
+        viewBox="0 0 320 140"
+        role="img"
+        aria-label={`Price chart for the last ${history.length} sessions${benchmarkLabel ? ` with ${benchmarkLabel} comparison` : ""}`}
+      >
+        <path className="sparkline-benchmark" d={benchmarkPath} />
+        <path className="sparkline-price" d={pricePath} />
+      </svg>
+      <div className="sparkline-legend">
+        <span>Start {firstPrice != null ? formatScore(firstPrice, 2) : "--"}</span>
+        <span>End {lastPrice != null ? formatScore(lastPrice, 2) : "--"}</span>
+        {benchmarkLabel ? <span>Overlay {benchmarkLabel}</span> : null}
+      </div>
+    </div>
+  );
+}
+
+function buildPath(values, width, height) {
+  if (!values?.length) return "";
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+
+  return values
+    .map((value, index) => {
+      const x = (index / Math.max(values.length - 1, 1)) * width;
+      const y = height - ((value - min) / range) * height;
+      return `${index === 0 ? "M" : "L"} ${x.toFixed(2)} ${y.toFixed(2)}`;
+    })
+    .join(" ");
+}
+
+function normalizeComparisonSeries(history, benchmark) {
+  if (!history?.length || !benchmark?.length) return [];
+  const basePrice = history[0].close || 1;
+  const benchmarkBase = benchmark[0].close || 1;
+  return benchmark.map((point) => (point.close / benchmarkBase) * basePrice);
 }

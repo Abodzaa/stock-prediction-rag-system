@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
 from app.controllers import (
+    context_controller,
     explain_controller,
     ingest_controller,
     models_controller,
@@ -30,6 +31,7 @@ app.add_middleware(
 
 app.include_router(models_controller.router)
 app.include_router(predict_controller.router)
+app.include_router(context_controller.router)
 app.include_router(explain_controller.router)
 app.include_router(ingest_controller.router)
 

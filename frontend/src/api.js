@@ -96,6 +96,12 @@ export const api = {
       method: "POST",
       body,
     }),
+  signalContext: (params, options = {}) => {
+    const query = new URLSearchParams(
+      Object.entries(params).filter(([, value]) => value !== "" && value != null)
+    );
+    return request(`/api/signal-context?${query.toString()}`, options);
+  },
   explainStream(params, handlers) {
     const query = new URLSearchParams(
       Object.entries(params).filter(([, value]) => value !== "" && value != null)

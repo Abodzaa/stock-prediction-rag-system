@@ -50,6 +50,7 @@ class ExplanationService:
             cites.append(NewsCitation(
                 doc_id=str(h.get("_id") or h.get("news_id") or h.get("url") or ""),
                 headline=str(h.get("headline", ""))[:240],
+                summary=str(h.get("summary", ""))[:420],
                 source=str(h.get("source", "")),
                 url=str(h.get("url", "")),
                 published=str(h.get("published_utc", "")),

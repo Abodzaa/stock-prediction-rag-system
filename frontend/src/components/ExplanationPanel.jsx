@@ -1,25 +1,45 @@
-import React from "react";
-import { buildExplanationSections } from "../lib/research.js";
+import React, { useMemo, useRef, useState } from "react";
 
 export default function ExplanationPanel({
   streaming,
   text,
-  citations,
   prediction,
   selectedModel,
   companyProfile,
+  sections,
   error,
   onRetry,
 }) {
-  const sections = buildExplanationSections({
-    text,
-    citations,
-    prediction,
-    model: selectedModel,
-    companyProfile,
-  });
+  const [highlightedSource, setHighlightedSource] = useState(null);
+  const [tooltipOpen, setTooltipOpen] = useState(false);
+  const sourceRefs = useRef(new Map());
+  const tooltipId = "sentiment-weighting-tip";
 
-  if (!prediction && !streaming && !sections.hasContent && !error) {
+  const evidenceSections = sections || {
+    hasContent: false,
+    bullishCatalysts: [],
+    bearishRisks: [],
+    supportingEvidence: [],
+    weakEvidence: [],
+    limitationBullets: [],
+    sentimentMeter: null,
+    sourceConfidence: null,
+  };
+
+  const hasEvidence = evidenceSections.supportingEvidence.length > 0 || evidenceSections.weakEvidence.length > 0;
+  const showEmpty = !prediction && !streaming && !evidenceSections.hasContent && !error;
+
+  const citationHandler = useMemo(
+    () => (number) => {
+      const node = sourceRefs.current.get(number);
+      setHighlightedSource(number);
+      node?.scrollIntoView({ behavior: "smooth", block: "center" });
+      if (node?.focus) node.focus();
+    },
+    []
+  );
+
+  if (showEmpty) {
     return (
       <section className="panel explanation-panel explanation-empty" aria-label="Explanation panel">
         <div className="panel-header">
@@ -29,8 +49,8 @@ export default function ExplanationPanel({
           </div>
         </div>
         <p className="lead">
-          Run the explanation stream to see the narrative behind the signal, which sources were actually used,
-          which ones were weak, and where the model should be treated with caution.
+          Run the explanation stream to see which articles directly support the signal, which ones were excluded,
+          and whether the news flow agrees with the model's conviction.
         </p>
       </section>
     );
@@ -45,7 +65,7 @@ export default function ExplanationPanel({
             Why this signal? {streaming ? <span className="live-dot" aria-hidden="true" /> : null}
           </h2>
           <p className="muted">
-            Grounded explanation, source confidence, and evidence for the selected ticker signal.
+            News/evidence lean is shown separately from the model's own price forecast.
           </p>
         </div>
         {streaming ? <span className="status-chip status-live">Streaming evidence</span> : null}
@@ -65,34 +85,104 @@ export default function ExplanationPanel({
         </div>
       ) : null}
 
+      {evidenceSections.sentimentMeter ? (
+        <div className="explanation-summary-grid">
+          <article className="subpanel net-lean-card">
+            <div className="subpanel-header">
+              <div>
+                <h3>Net directional score</h3>
+                <p className="muted small">This is the news/evidence lean, not the quant model output.</p>
+              </div>
+            </div>
+            <strong className={`net-lean-value tone-${evidenceSections.sentimentMeter.netDirection.tone}`}>
+              {evidenceSections.sentimentMeter.netLabel}
+            </strong>
+            <p className="metric-footnote">
+              {evidenceSections.sourceConfidence?.detail || "Directly relevant sources drive this view."}
+            </p>
+          </article>
+
+          <article className="subpanel sentiment-meter-card">
+            <div className="subpanel-header">
+              <div>
+                <h3>News sentiment meter</h3>
+                <p className="muted small">Only directly relevant sources marked Used are counted.</p>
+              </div>
+              <button
+                type="button"
+                className="tooltip-trigger"
+                aria-label="Sentiment weighting details"
+                aria-describedby={tooltipOpen ? tooltipId : undefined}
+                aria-expanded={tooltipOpen}
+                onClick={() => setTooltipOpen((current) => !current)}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget)) {
+                    setTooltipOpen(false);
+                  }
+                }}
+              >
+                i
+              </button>
+            </div>
+
+            {tooltipOpen ? (
+              <div id={tooltipId} role="tooltip" className="tooltip-panel">
+                More recent articles count more toward this score.
+              </div>
+            ) : null}
+
+            <div className="sentiment-meter" aria-label={`Bullish ${evidenceSections.sentimentMeter.bullishPercent} percent and bearish ${evidenceSections.sentimentMeter.bearishPercent} percent`}>
+              <div
+                className="sentiment-meter-bullish"
+                style={{ width: `${evidenceSections.sentimentMeter.bullishPercent}%` }}
+              />
+              <div
+                className="sentiment-meter-bearish"
+                style={{ width: `${evidenceSections.sentimentMeter.bearishPercent}%` }}
+              />
+            </div>
+            <div className="sentiment-meter-labels">
+              <span className="tone-bullish">{evidenceSections.sentimentMeter.bullishPercent}% Bullish</span>
+              <span className="tone-bearish">{evidenceSections.sentimentMeter.bearishPercent}% Bearish</span>
+            </div>
+            <p className="metric-footnote">
+              {evidenceSections.sentimentMeter.caption}{" "}
+              {evidenceSections.sentimentMeter.supportingNumbers.map((number) => (
+                <CitationButton key={`meter-${number}`} number={number} onActivate={citationHandler} />
+              ))}
+              {evidenceSections.sentimentMeter.excludedNumbers.length ? (
+                <>
+                  {" "}Excluded{" "}
+                  {evidenceSections.sentimentMeter.excludedNumbers.map((number) => (
+                    <CitationButton key={`excluded-${number}`} number={number} onActivate={citationHandler} />
+                  ))}
+                </>
+              ) : null}
+            </p>
+          </article>
+        </div>
+      ) : null}
+
       <div className="explanation-grid">
-        <SectionCard
-          title="Main drivers"
-          subtitle="Highest-signal explanation points"
-          emptyText="The explanation has not produced clear drivers yet."
-          items={sections.mainDrivers}
+        <CatalystCard
+          title="Bullish catalysts"
+          subtitle="Concise evidence that supports upside"
+          tone="bullish"
+          icon="▲"
+          items={evidenceSections.bullishCatalysts}
+          emptyText="No directly relevant bullish catalysts were strong enough to keep."
+          onActivateSource={citationHandler}
         />
 
-        <article className="subpanel">
-          <div className="subpanel-header">
-            <div>
-              <h3>Source confidence</h3>
-              <p className="muted small">{sections.sourceConfidence.detail}</p>
-            </div>
-            <span className={`status-chip tone-${sections.sourceConfidence.tone}`}>
-              {sections.sourceConfidence.label}
-            </span>
-          </div>
-          {streaming && !text ? (
-            <div className="explanation-skeleton" aria-hidden="true">
-              <span className="skeleton-line wide" />
-              <span className="skeleton-line" />
-              <span className="skeleton-line short" />
-            </div>
-          ) : (
-            <div className="explanation-copy">{renderWithCitations(text)}</div>
-          )}
-        </article>
+        <CatalystCard
+          title="Bearish risks"
+          subtitle="Concise evidence that pressures the thesis"
+          tone="bearish"
+          icon="▼"
+          items={evidenceSections.bearishRisks}
+          emptyText="No directly relevant bearish risks were strong enough to keep."
+          onActivateSource={citationHandler}
+        />
 
         <article className="subpanel">
           <div className="subpanel-header">
@@ -101,14 +191,23 @@ export default function ExplanationPanel({
               <p className="muted small">Articles directly used in the explanation stream.</p>
             </div>
           </div>
-          {sections.supportingEvidence.length ? (
+          {evidenceSections.supportingEvidence.length ? (
             <div className="source-card-list">
-              {sections.supportingEvidence.map((source) => (
-                <SourceCard key={source.doc_id || source.number} source={source} />
+              {evidenceSections.supportingEvidence.map((source) => (
+                <SourceCard
+                  key={source.doc_id || source.number}
+                  source={source}
+                  highlighted={highlightedSource === source.number}
+                  setNode={(node) => {
+                    if (node) sourceRefs.current.set(source.number, node);
+                  }}
+                />
               ))}
             </div>
           ) : (
-            <p className="muted small">No strongly used citations yet.</p>
+            <p className="muted small">
+              {streaming && !text ? "Waiting for directly relevant evidence..." : "No strongly used citations yet."}
+            </p>
           )}
         </article>
 
@@ -116,75 +215,78 @@ export default function ExplanationPanel({
           <div className="subpanel-header">
             <div>
               <h3>Weak or unrelated evidence</h3>
-              <p className="muted small">Contextual or lower-relevance articles that should not be over-weighted.</p>
+              <p className="muted small">These sources were intentionally excluded from the sentiment score.</p>
             </div>
           </div>
-          {sections.weakEvidence.length ? (
+          {evidenceSections.weakEvidence.length ? (
             <div className="source-card-list">
-              {sections.weakEvidence.map((source) => (
-                <SourceCard key={source.doc_id || source.number} source={source} />
+              {evidenceSections.weakEvidence.map((source) => (
+                <SourceCard
+                  key={source.doc_id || source.number}
+                  source={source}
+                  highlighted={highlightedSource === source.number}
+                  setNode={(node) => {
+                    if (node) sourceRefs.current.set(source.number, node);
+                  }}
+                />
               ))}
             </div>
           ) : (
-            <p className="muted small">No weak-evidence sources were detected.</p>
+            <p className="muted small">No weak or unrelated sources were detected.</p>
           )}
         </article>
 
-        <SectionCard
-          title="Model limitations"
-          subtitle="Reasons not to over-trust the signal"
-          items={sections.limitationBullets}
-          tone="warning"
-          emptyText="No additional limitations surfaced beyond the standard model disclaimer."
-        />
+        <article className="subpanel tone-warning">
+          <div className="subpanel-header">
+            <div>
+              <h3>Model limitations</h3>
+              <p className="muted small">Reasons not to over-trust the signal.</p>
+            </div>
+          </div>
+          {evidenceSections.limitationBullets.length ? (
+            <ul className="insight-list">
+              {evidenceSections.limitationBullets.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="muted small">No additional limitations surfaced yet.</p>
+          )}
+        </article>
       </div>
 
-      {sections.weakEvidence.length ? (
-        <div className="state-banner state-warning" role="status">
+      {!hasEvidence && streaming ? (
+        <div className="state-banner tone-loading" role="status">
           <div>
-            <strong>Weak evidence detected</strong>
-            <p>
-              Some retrieved headlines appear weakly related or were not used directly in the final explanation.
-              Treat the narrative with proportionate caution.
-            </p>
+            <strong>Reading the article set</strong>
+            <p>Used and excluded evidence will appear here as the explanation stream finishes.</p>
           </div>
         </div>
       ) : null}
-
-      <div className="section-stack">
-        <div className="section-title-row">
-          <div>
-            <h3>All sources</h3>
-            <p className="muted small">Citation numbering is preserved so in-text references remain understandable.</p>
-          </div>
-        </div>
-        {sections.sourceCards.length ? (
-          <div className="source-card-list">
-            {sections.sourceCards.map((source) => (
-              <SourceCard key={source.doc_id || source.number} source={source} />
-            ))}
-          </div>
-        ) : (
-          <p className="muted small">No source cards yet.</p>
-        )}
-      </div>
     </section>
   );
 }
 
-function SectionCard({ title, subtitle, items, emptyText, tone = "default" }) {
+function CatalystCard({ title, subtitle, tone, icon, items, emptyText, onActivateSource }) {
   return (
-    <article className={`subpanel tone-${tone}`}>
+    <article className={`subpanel catalyst-card tone-${tone}`}>
       <div className="subpanel-header">
         <div>
-          <h3>{title}</h3>
+          <h3>
+            <span className="catalyst-icon" aria-hidden="true">{icon}</span> {title}
+          </h3>
           <p className="muted small">{subtitle}</p>
         </div>
       </div>
       {items?.length ? (
-        <ul className="insight-list">
+        <ul className="insight-list catalyst-list">
           {items.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item.id}>
+              <span>{item.text}</span>{" "}
+              {item.citations.map((number) => (
+                <CitationButton key={`${item.id}-${number}`} number={number} onActivate={onActivateSource} />
+              ))}
+            </li>
           ))}
         </ul>
       ) : (
@@ -194,9 +296,15 @@ function SectionCard({ title, subtitle, items, emptyText, tone = "default" }) {
   );
 }
 
-function SourceCard({ source }) {
+function SourceCard({ source, highlighted, setNode }) {
   return (
-    <article className={`source-card tone-${source.tone}`} aria-label={`Source ${source.number}`}>
+    <article
+      id={`source-${source.number}`}
+      ref={setNode}
+      tabIndex={-1}
+      className={`source-card tone-${source.tone}${highlighted ? " is-highlighted" : ""}`}
+      aria-label={`Source ${source.number}`}
+    >
       <div className="source-card-header">
         <span className="source-number">[{source.number}]</span>
         <span className={`status-chip tone-${source.tone}`}>{source.status}</span>
@@ -215,21 +323,25 @@ function SourceCard({ source }) {
         <span>{source.publishedLabel}</span>
         <span>Score {source.scoreLabel}</span>
       </div>
+      {source.summary ? <p className="source-summary">{source.summary}</p> : null}
+      {source.tone !== "used" && source.exclusionReason ? (
+        <p className="source-exclusion-note">{source.exclusionReason}</p>
+      ) : null}
     </article>
   );
 }
 
-function renderWithCitations(text) {
-  if (!text) return "Streaming explanation will appear here once the backend returns token output.";
-
-  const parts = text.split(/(\[\d+\])/g);
-  return parts.map((part, index) =>
-    /^\[\d+\]$/.test(part) ? (
-      <sup key={index} className="cite-marker">
-        {part}
-      </sup>
-    ) : (
-      <span key={index}>{part}</span>
-    )
+function CitationButton({ number, onActivate }) {
+  return (
+    <button
+      type="button"
+      className="cite-button"
+      onClick={() => onActivate(number)}
+      onMouseEnter={() => onActivate(number)}
+      onFocus={() => onActivate(number)}
+      aria-label={`Jump to source ${number}`}
+    >
+      [{number}]
+    </button>
   );
 }

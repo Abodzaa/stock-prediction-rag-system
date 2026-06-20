@@ -3,10 +3,12 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 
 import {
+  buildActionSummary,
   buildAvailableOptions,
   buildExplanationSections,
   buildFilterChips,
   buildPredictionSummary,
+  buildReconciliationNote,
   filterModels,
   getHealthPresentation,
   sortModels,
@@ -128,17 +130,87 @@ test("explanation sections separate supporting and weak evidence", () => {
   const sections = buildExplanationSections({
     text: "Apple demand trends improved [1]. However, one market-wide headline was only loosely related [2].",
     citations: [
-      { doc_id: "1", headline: "iPhone demand rises", source: "Reuters", url: "https://example.com/1", published: "2026-06-14", score: 0.88 },
-      { doc_id: "2", headline: "Macro markets mixed", source: "Bloomberg", url: "https://example.com/2", published: "2026-06-14", score: 0.2 },
+      { doc_id: "1", headline: "iPhone demand rises", summary: "Apple demand is improving.", source: "Reuters", url: "https://example.com/1", published: "2026-06-14", score: 0.88 },
+      { doc_id: "2", headline: "Macro markets mixed", summary: "Broad market context only.", source: "Bloomberg", url: "https://example.com/2", published: "2026-06-14", score: 0.2 },
     ],
     prediction: { as_of: "2026-06-14", horizon: "h1", confidence: 0.61, warnings: [] },
     model: { basis: "panel" },
-    companyProfile: { security: "Apple Inc." },
+    companyProfile: { security: "Apple Inc.", symbol: "AAPL" },
   });
 
-  assert.equal(sections.supportingEvidence.length, 1);
-  assert.equal(sections.weakEvidence.length, 1);
+  assert.equal(sections.supportingEvidence.length, 2);
+  assert.equal(sections.weakEvidence.length, 0);
   assert.equal(sections.limitationBullets.length > 0, true);
+});
+
+test("sentiment meter excludes weak or unrelated sources from the score", () => {
+  const sections = buildExplanationSections({
+    text: "Apple demand trends improved [1]. Guidance risk remains elevated [2].",
+    citations: [
+      { doc_id: "1", headline: "Apple demand rises on strong services growth", summary: "Bullish demand commentary.", source: "Reuters", url: "https://example.com/1", published: "2026-06-15", score: 0.91 },
+      { doc_id: "2", headline: "Apple supplier warns of softer margins", summary: "Near-term pressure remains.", source: "Bloomberg", url: "https://example.com/2", published: "2026-06-14", score: 0.76 },
+      { doc_id: "3", headline: "SpaceX launch reshapes satellite market", summary: "Unrelated company context.", source: "CNBC", url: "https://example.com/3", published: "2026-06-14", score: 0.21 },
+    ],
+    prediction: { symbol: "AAPL", as_of: "2026-06-15", horizon: "h1", confidence: 0.42, warnings: [] },
+    model: { basis: "panel" },
+    companyProfile: { security: "Apple Inc.", symbol: "AAPL" },
+  });
+
+  assert.equal(sections.sentimentMeter.directlyRelevantCount, 2);
+  assert.equal(sections.sentimentMeter.excludedCount, 1);
+  assert.deepEqual(sections.sentimentMeter.supportingNumbers, [1, 2]);
+  assert.deepEqual(sections.sentimentMeter.excludedNumbers, [3]);
+});
+
+test("reconciliation note appears on news and model mismatch but not on aligned evidence", () => {
+  const mismatchEvidence = {
+    supportingEvidence: [{ number: 1 }],
+    netDirection: { direction: "bullish", confidence: 0.78, tone: "bullish" },
+  };
+  const alignedEvidence = {
+    supportingEvidence: [{ number: 1 }],
+    netDirection: { direction: "bearish", confidence: 0.66, tone: "bearish" },
+  };
+
+  const mismatch = buildReconciliationNote(
+    { direction: "down", confidence: 0.4 },
+    mismatchEvidence
+  );
+  const aligned = buildReconciliationNote(
+    { direction: "down", confidence: 0.68 },
+    alignedEvidence
+  );
+
+  assert.equal(mismatch.aligned, false);
+  assert.match(mismatch.text, /mismatch/i);
+  assert.equal(aligned.aligned, true);
+  assert.match(aligned.text, /aligned/i);
+});
+
+test("action summary synthesizes model signal and news sentiment", () => {
+  const summary = buildActionSummary({
+    prediction: {
+      symbol: "AAPL",
+      direction: "up",
+      confidence: 0.41,
+      horizon: "h1",
+      as_of: "2026-06-15",
+      predicted_pct: 0.3,
+      warnings: [],
+      metrics: { directional_accuracy: 0.57 },
+    },
+    selectedModel: { basis: "panel", family: "ridge", kind: "classical" },
+    companyProfile: { symbol: "AAPL", security: "Apple Inc.", sector: "Information Technology" },
+    evidenceSummary: {
+      supportingEvidence: [{ number: 1 }],
+      netDirection: { direction: "bullish", confidence: 0.74, tone: "bullish" },
+    },
+    marketContext: null,
+  });
+
+  assert.match(summary.text, /Signal:/);
+  assert.match(summary.text, /News sentiment:/);
+  assert.match(summary.text, /Recommendation:/);
 });
 
 test("model picker uses accessible custom listbox controls instead of native select", async () => {

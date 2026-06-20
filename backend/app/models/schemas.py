@@ -61,10 +61,47 @@ class ExplainRequest(BaseModel):
 class NewsCitation(BaseModel):
     doc_id: str
     headline: str
+    summary: str = ""
     source: str
     url: str
     published: str
     score: float | None = None
+
+
+class PricePoint(BaseModel):
+    date: str
+    close: float
+
+
+class UpcomingEvent(BaseModel):
+    kind: str
+    label: str
+    date: str
+    within_horizon: bool = False
+
+
+class TickerTrackRecord(BaseModel):
+    lookback: int
+    correct: int
+    total: int
+    detail: str
+
+
+class SignalContextResponse(BaseModel):
+    symbol: str
+    benchmark_symbol: str | None = None
+    current_price: float
+    price_as_of: str
+    predicted_price: float
+    range_low: float
+    range_high: float
+    volatility_label: str
+    volatility_annualized_pct: float | None = None
+    volatility_detail: str = ""
+    price_history: list[PricePoint] = []
+    benchmark_history: list[PricePoint] = []
+    upcoming_events: list[UpcomingEvent] = []
+    track_record: TickerTrackRecord | None = None
 
 
 class IngestRequest(BaseModel):

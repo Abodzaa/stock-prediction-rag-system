@@ -6,7 +6,9 @@ import ExplanationPanel from "./components/ExplanationPanel.jsx";
 import TickerSelector from "./components/TickerSelector.jsx";
 import constituentsData from "./data/constituents.json";
 import {
+  buildActionSummary,
   buildAvailableOptions,
+  buildExplanationSections,
   buildFilterChips,
   filterModels,
   getCompanyProfile,
@@ -44,6 +46,8 @@ export default function App() {
   const [prediction, setPrediction] = useState(null);
   const [predictionLoading, setPredictionLoading] = useState(false);
   const [predictionError, setPredictionError] = useState("");
+  const [marketContext, setMarketContext] = useState(null);
+  const [marketContextLoading, setMarketContextLoading] = useState(false);
 
   const [explanationText, setExplanationText] = useState("");
   const [citations, setCitations] = useState([]);
@@ -144,6 +148,28 @@ export default function App() {
   const activeSymbol = symbol;
   const companyProfile = getCompanyProfile(constituents, activeSymbol);
   const healthPresentation = getHealthPresentation(health, healthError, healthAttempt);
+  const explanationSections = useMemo(
+    () =>
+      buildExplanationSections({
+        text: explanationText,
+        citations,
+        prediction,
+        model: selectedModel,
+        companyProfile,
+      }),
+    [citations, companyProfile, explanationText, prediction, selectedModel]
+  );
+  const actionSummary = useMemo(
+    () =>
+      buildActionSummary({
+        prediction,
+        selectedModel,
+        companyProfile,
+        evidenceSummary: explanationSections,
+        marketContext,
+      }),
+    [companyProfile, explanationSections, marketContext, prediction, selectedModel]
+  );
 
   const optionSets = useMemo(() => {
     return {
@@ -198,10 +224,37 @@ export default function App() {
     setPrediction(null);
     setPredictionLoading(false);
     setPredictionError("");
+    setMarketContext(null);
+    setMarketContextLoading(false);
     setExplanationText("");
     setCitations([]);
     setExplanationStreaming(false);
     setExplanationError("");
+  }
+
+  async function loadSignalContext(nextPrediction, runId) {
+    if (!nextPrediction?.symbol || !nextPrediction?.horizon) return;
+
+    setMarketContextLoading(true);
+
+    try {
+      const benchmarkSymbol = selectedIndex === "nasdaq100" ? "^NDX" : "^GSPC";
+      const nextContext = await api.signalContext({
+        symbol: nextPrediction.symbol,
+        horizon: nextPrediction.horizon,
+        predicted_pct: nextPrediction.predicted_pct,
+        benchmark_symbol: benchmarkSymbol,
+      });
+      if (runId !== requestRunRef.current) return;
+      setMarketContext(nextContext);
+    } catch {
+      if (runId !== requestRunRef.current) return;
+      setMarketContext(null);
+    } finally {
+      if (runId === requestRunRef.current) {
+        setMarketContextLoading(false);
+      }
+    }
   }
 
   async function runPrediction() {
@@ -227,6 +280,7 @@ export default function App() {
       const nextPrediction = await api.predict(payload);
       if (runId !== requestRunRef.current) return;
       setPrediction({ ...nextPrediction, symbol: activeSymbol });
+      loadSignalContext({ ...nextPrediction, symbol: activeSymbol }, runId);
     } catch (error) {
       if (runId !== requestRunRef.current) return;
       setPredictionError(error.message || "Prediction failed.");
@@ -260,6 +314,7 @@ export default function App() {
         prediction: (nextPrediction) => {
           if (runId !== requestRunRef.current) return;
           setPrediction({ ...nextPrediction, symbol: activeSymbol });
+          loadSignalContext({ ...nextPrediction, symbol: activeSymbol }, runId);
         },
         citations: (nextCitations) => {
           if (runId !== requestRunRef.current) return;
@@ -409,12 +464,20 @@ export default function App() {
         </aside>
 
         <main className="results-stage">
+          <section className={`panel action-summary-banner tone-${actionSummary.tone}`} aria-label="Action summary">
+            <p className="eyebrow">Action summary</p>
+            <p className="lead">{actionSummary.text}</p>
+          </section>
+
           <PredictionCard
             prediction={prediction}
             busy={predictionLoading}
             companyProfile={companyProfile}
             selectedModel={selectedModel}
             selectedSymbol={activeSymbol}
+            marketContext={marketContext}
+            marketContextLoading={marketContextLoading}
+            evidenceSummary={explanationSections}
             onRetry={runPrediction}
             error={predictionError}
           />
@@ -422,11 +485,11 @@ export default function App() {
           <ExplanationPanel
             streaming={explanationStreaming}
             text={explanationText}
-            citations={citations}
             prediction={prediction}
             selectedModel={selectedModel}
             companyProfile={companyProfile}
             selectedSymbol={activeSymbol}
+            sections={explanationSections}
             error={explanationError}
             onRetry={runExplanation}
           />
