@@ -1,6 +1,15 @@
-2026/06/20-10:05:22.387 4664 Reusing MANIFEST D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2026/06/20-10:05:22.470 4664 Recovering log #10
-2026/06/20-10:05:22.471 4664 Reusing old log D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/000010.log 
-2026/06/20-10:05:25.501 3e60 Level-0 table #14: started
-2026/06/20-10:05:25.563 3e60 Level-0 table #14: 682840 bytes OK
-2026/06/20-10:05:25.628 3e60 Delete type=0 #10
+2026/06/20-11:36:25.936 924 Reusing MANIFEST D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/06/20-11:36:25.939 924 Recovering log #16
+2026/06/20-11:36:25.940 924 Reusing old log D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/000016.log 
+2026/06/20-11:36:26.836 5ec4 Level-0 table #20: started
+2026/06/20-11:36:26.943 5ec4 Level-0 table #20: 682852 bytes OK
+2026/06/20-11:36:27.012 5ec4 Delete type=0 #16
+2026/06/20-11:36:27.013 5ec4 Compacting 4@0 + 1@1 files
+2026/06/20-11:36:27.057 5ec4 Generated table #21@0: 4 keys, 682759 bytes
+2026/06/20-11:36:27.057 5ec4 Compacted 4@0 + 1@1 files => 682759 bytes
+2026/06/20-11:36:27.124 5ec4 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/06/20-11:36:27.126 5ec4 Delete type=2 #8
+2026/06/20-11:36:27.126 5ec4 Delete type=2 #11
+2026/06/20-11:36:27.126 5ec4 Delete type=2 #14
+2026/06/20-11:36:27.126 5ec4 Delete type=2 #17
+2026/06/20-11:36:27.126 5ec4 Delete type=2 #20

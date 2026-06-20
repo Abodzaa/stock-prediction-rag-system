@@ -1,6 +1,6 @@
-2026/06/20-10:06:40.431 2778 Reusing MANIFEST D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
-2026/06/20-10:06:40.432 2778 Recovering log #13
-2026/06/20-10:06:40.433 2778 Reusing old log D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/000013.log 
-2026/06/20-10:06:41.091 31e4 Level-0 table #17: started
-2026/06/20-10:06:41.133 31e4 Level-0 table #17: 682852 bytes OK
-2026/06/20-10:06:41.219 31e4 Delete type=0 #13
+2026/06/20-11:37:59.564 3214 Reusing MANIFEST D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/06/20-11:37:59.565 3214 Recovering log #19
+2026/06/20-11:37:59.566 3214 Reusing old log D:\Downloads\STOCK_UI\Boodyyyy\Boodyyyy\tmp-edge-profile\Default\EdgeCoupons/coupons_data.db/000019.log 
+2026/06/20-11:38:00.582 2e94 Level-0 table #24: started
+2026/06/20-11:38:00.627 2e94 Level-0 table #24: 682852 bytes OK
+2026/06/20-11:38:00.686 2e94 Delete type=0 #19

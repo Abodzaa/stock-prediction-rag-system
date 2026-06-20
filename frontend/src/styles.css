@@ -1155,9 +1155,35 @@ input::placeholder {
 
 .net-lean-card,
 .sentiment-meter-card,
+.rag-answer-card,
 .catalyst-card {
   display: grid;
   gap: var(--space-3);
+}
+
+.rag-answer-card {
+  margin-bottom: var(--space-4);
+  background: linear-gradient(180deg, rgba(18, 34, 56, 0.96), rgba(13, 26, 44, 0.96));
+  border-color: rgba(82, 167, 255, 0.22);
+}
+
+.rag-answer-copy {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.rag-answer-copy p,
+.rag-answer-empty {
+  margin: 0;
+  line-height: 1.7;
+}
+
+.rag-answer-copy p {
+  color: var(--text);
+}
+
+.rag-answer-copy .cite-button {
+  margin-top: 4px;
 }
 
 .net-lean-value {

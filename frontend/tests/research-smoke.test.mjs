@@ -160,6 +160,11 @@ test("sentiment meter excludes weak or unrelated sources from the score", () => 
   assert.equal(sections.sentimentMeter.excludedCount, 1);
   assert.deepEqual(sections.sentimentMeter.supportingNumbers, [1, 2]);
   assert.deepEqual(sections.sentimentMeter.excludedNumbers, [3]);
+  assert.equal(sections.ragAnswer.available, true);
+  assert.deepEqual(
+    [...new Set(sections.ragAnswer.sentences.flatMap((sentence) => sentence.citations))],
+    [1, 2]
+  );
 });
 
 test("reconciliation note appears on news and model mismatch but not on aligned evidence", () => {
@@ -211,6 +216,33 @@ test("action summary synthesizes model signal and news sentiment", () => {
   assert.match(summary.text, /Signal:/);
   assert.match(summary.text, /News sentiment:/);
   assert.match(summary.text, /Recommendation:/);
+});
+
+test("rag answer falls back cleanly when no directly relevant used sources exist", () => {
+  const sections = buildExplanationSections({
+    text: "",
+    citations: [
+      { doc_id: "1", headline: "Macro markets mixed", summary: "Broad market context only.", source: "Bloomberg", url: "https://example.com/1", published: "2026-06-14", score: 0.2 },
+    ],
+    prediction: { symbol: "AAPL", as_of: "2026-06-15", horizon: "h1", confidence: 0.42, warnings: [] },
+    model: { basis: "panel" },
+    companyProfile: { security: "Apple Inc.", symbol: "AAPL" },
+  });
+
+  assert.equal(sections.ragAnswer.available, false);
+  assert.match(sections.ragAnswer.emptyMessage, /no directly relevant news sources/i);
+});
+
+test("explanation panel keeps citation jump and highlight behavior for rag answer links", async () => {
+  const source = await readFile(new URL("../src/components/ExplanationPanel.jsx", import.meta.url), "utf8");
+
+  assert.match(source, /<h3>News-Based RAG Answer<\/h3>/);
+  assert.match(source, /Run the signal to generate the news-based RAG answer\./);
+  assert.match(source, /No directly relevant news sources were found for this ticker\/horizon, so no RAG answer is available\./);
+  assert.match(source, /ragAnswer\.sentences\.map/);
+  assert.match(source, /scrollIntoView/);
+  assert.match(source, /setHighlightedSource/);
+  assert.match(source, /className=\{`source-card tone-\$\{source\.tone\}\$\{highlighted \? " is-highlighted" : ""\}`\}/);
 });
 
 test("model picker uses accessible custom listbox controls instead of native select", async () => {

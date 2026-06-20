@@ -385,6 +385,12 @@ export function buildExplanationSections({
     getConfidenceState(prediction?.confidence ?? 0),
     limitationSentences
   );
+  const ragAnswer = buildRagAnswer({
+    prediction,
+    supportingEvidence,
+    weakEvidence,
+    sentimentMeter,
+  });
 
   return {
     hasContent: Boolean(normalizedText || sourceCards.length),
@@ -398,6 +404,7 @@ export function buildExplanationSections({
     sourceCards,
     limitationBullets,
     limitationSentences,
+    ragAnswer,
     mainDrivers: [...catalystLists.bullishCatalysts, ...catalystLists.bearishRisks].map((item) => item.text),
   };
 }
@@ -593,6 +600,88 @@ function buildCatalystLists({ supportingEvidence, explanationText, prediction, c
   };
 }
 
+function buildRagAnswer({ prediction, supportingEvidence, weakEvidence, sentimentMeter }) {
+  if (!supportingEvidence.length) {
+    return {
+      available: false,
+      tone: "context",
+      sentences: [],
+      emptyMessage:
+        "No directly relevant news sources were found for this ticker/horizon, so no RAG answer is available.",
+    };
+  }
+
+  const leadSources = supportingEvidence.slice(0, 2);
+  const leadCitations = leadSources.map((source) => source.number);
+  const combinedSummary = composeLeadSummary(leadSources);
+  const evidenceDirection = sentimentMeter?.netDirection?.direction || "neutral";
+  const modelDirection =
+    prediction?.direction === "up" ? "bullish" : prediction?.direction === "down" ? "bearish" : "neutral";
+  const confidenceTone = getConfidenceState(prediction?.confidence ?? 0).tone;
+  const leanLabel =
+    evidenceDirection === "bullish"
+      ? "bullish"
+      : evidenceDirection === "bearish"
+        ? "bearish"
+        : "mixed or inconclusive";
+  const relationship =
+    evidenceDirection !== "neutral" && modelDirection !== "neutral" && evidenceDirection === modelDirection
+      ? confidenceTone === "low"
+        ? "weak support rather than full confirmation"
+        : "confirmation"
+      : evidenceDirection !== "neutral" && modelDirection !== "neutral" && evidenceDirection !== modelDirection
+        ? "contradiction"
+        : "weak or inconclusive support";
+  const comparison =
+    evidenceDirection === "neutral"
+      ? "The news flow is mixed, so it does not point clearly in the same direction as the model."
+      : evidenceDirection === modelDirection
+        ? "The news lean points in the same direction as the model signal."
+        : "The news lean points in a different direction from the model signal.";
+  const treatment =
+    relationship === "confirmation"
+      ? "Treat the news flow as confirmation of the signal, while still checking event risk."
+      : relationship === "contradiction"
+        ? "Treat this as a contradiction, not confirmation."
+        : "Treat this as weak or inconclusive support rather than confirmation.";
+
+  return {
+    available: true,
+    tone:
+      relationship === "confirmation"
+        ? "used"
+        : relationship === "contradiction"
+          ? "warning"
+          : "context",
+    sentences: [
+      {
+        id: "rag-1",
+        text: combinedSummary,
+        citations: leadCitations,
+      },
+      {
+        id: "rag-2",
+        text: `Overall, the directly relevant news evidence leans ${leanLabel}.`,
+        citations: sentimentMeter?.supportingNumbers || leadCitations,
+      },
+      {
+        id: "rag-3",
+        text: `${comparison} ${treatment}`,
+        citations: sentimentMeter?.supportingNumbers || leadCitations,
+      },
+      ...(weakEvidence.length
+        ? [
+            {
+              id: "rag-4",
+              text: `${weakEvidence.length} weak or unrelated source${weakEvidence.length === 1 ? "" : "s"} were excluded from this answer.`,
+              citations: [],
+            },
+          ]
+        : []),
+    ],
+  };
+}
+
 function extractCitedBullets(explanationText, supportingNumbers) {
   if (!explanationText) return [];
 
@@ -758,6 +847,17 @@ function chooseSourceSnippet(source) {
     if (firstSentence && firstSentence.length >= 30) return firstSentence;
   }
   return String(source.headline || "(untitled article)");
+}
+
+function composeLeadSummary(sources) {
+  const snippets = sources
+    .map((source) => chooseSourceSnippet(source).replace(/[.!?]+$/, ""))
+    .filter(Boolean);
+
+  if (!snippets.length) return "No directly relevant used sources were available.";
+  if (snippets.length === 1) return `${tightenBullet(snippets[0])}.`;
+
+  return `${tightenBullet(`${snippets[0]}, while ${snippets[1].charAt(0).toLowerCase()}${snippets[1].slice(1)}`)}.`;
 }
 
 function tightenBullet(text) {

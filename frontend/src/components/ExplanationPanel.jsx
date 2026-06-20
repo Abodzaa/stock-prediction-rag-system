@@ -17,6 +17,7 @@ export default function ExplanationPanel({
 
   const evidenceSections = sections || {
     hasContent: false,
+    ragAnswer: null,
     bullishCatalysts: [],
     bearishRisks: [],
     supportingEvidence: [],
@@ -27,7 +28,7 @@ export default function ExplanationPanel({
   };
 
   const hasEvidence = evidenceSections.supportingEvidence.length > 0 || evidenceSections.weakEvidence.length > 0;
-  const showEmpty = !prediction && !streaming && !evidenceSections.hasContent && !error;
+  const showEmpty = !streaming && !evidenceSections.hasContent && !error;
 
   const citationHandler = useMemo(
     () => (number) => {
@@ -44,14 +45,11 @@ export default function ExplanationPanel({
       <section className="panel explanation-panel explanation-empty" aria-label="Explanation panel">
         <div className="panel-header">
           <div>
-            <p className="eyebrow">Evidence review</p>
-            <h2>Why this signal?</h2>
+            <p className="eyebrow">News RAG explanation</p>
+            <h2>News-Based RAG Answer</h2>
           </div>
         </div>
-        <p className="lead">
-          Run the explanation stream to see which articles directly support the signal, which ones were excluded,
-          and whether the news flow agrees with the model's conviction.
-        </p>
+        <p className="lead">Run the signal to generate the news-based RAG answer.</p>
       </section>
     );
   }
@@ -60,12 +58,12 @@ export default function ExplanationPanel({
     <section className="panel explanation-panel" aria-label="RAG explanation">
       <div className="panel-header">
         <div>
-          <p className="eyebrow">Explainability</p>
+          <p className="eyebrow">News RAG explanation</p>
           <h2>
-            Why this signal? {streaming ? <span className="live-dot" aria-hidden="true" /> : null}
+            News-Based RAG Answer {streaming ? <span className="live-dot" aria-hidden="true" /> : null}
           </h2>
           <p className="muted">
-            News/evidence lean is shown separately from the model's own price forecast.
+            Source-grounded news reasoning is shown separately from the model's own price forecast.
           </p>
         </div>
         {streaming ? <span className="status-chip status-live">Streaming evidence</span> : null}
@@ -84,6 +82,34 @@ export default function ExplanationPanel({
           ) : null}
         </div>
       ) : null}
+
+      <article className={`subpanel rag-answer-card tone-${evidenceSections.ragAnswer?.tone || "context"}`}>
+        <div className="subpanel-header">
+          <div>
+            <h3>News-Based RAG Answer</h3>
+            <p className="muted small">Direct answer grounded only in sources marked Used.</p>
+          </div>
+        </div>
+        {evidenceSections.ragAnswer?.available ? (
+          <div className="rag-answer-copy" aria-live="polite">
+            {evidenceSections.ragAnswer.sentences.map((sentence) => (
+              <p key={sentence.id}>
+                <span>{sentence.text}</span>{" "}
+                {sentence.citations.map((number) => (
+                  <CitationButton key={`${sentence.id}-${number}`} number={number} onActivate={citationHandler} />
+                ))}
+              </p>
+            ))}
+          </div>
+        ) : (
+          <p className="lead rag-answer-empty">
+            {streaming
+              ? "Reading directly relevant sources to build the news-based RAG answer."
+              : evidenceSections.ragAnswer?.emptyMessage ||
+                "No directly relevant news sources were found for this ticker/horizon, so no RAG answer is available."}
+          </p>
+        )}
+      </article>
 
       {evidenceSections.sentimentMeter ? (
         <div className="explanation-summary-grid">
@@ -235,25 +261,25 @@ export default function ExplanationPanel({
             <p className="muted small">No weak or unrelated sources were detected.</p>
           )}
         </article>
-
-        <article className="subpanel tone-warning">
-          <div className="subpanel-header">
-            <div>
-              <h3>Model limitations</h3>
-              <p className="muted small">Reasons not to over-trust the signal.</p>
-            </div>
-          </div>
-          {evidenceSections.limitationBullets.length ? (
-            <ul className="insight-list">
-              {evidenceSections.limitationBullets.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="muted small">No additional limitations surfaced yet.</p>
-          )}
-        </article>
       </div>
+
+      <article className="subpanel tone-warning">
+        <div className="subpanel-header">
+          <div>
+            <h3>Model limitations</h3>
+            <p className="muted small">Reasons not to over-trust the signal.</p>
+          </div>
+        </div>
+        {evidenceSections.limitationBullets.length ? (
+          <ul className="insight-list">
+            {evidenceSections.limitationBullets.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="muted small">No additional limitations surfaced yet.</p>
+        )}
+      </article>
 
       {!hasEvidence && streaming ? (
         <div className="state-banner tone-loading" role="status">
@@ -268,12 +294,13 @@ export default function ExplanationPanel({
 }
 
 function CatalystCard({ title, subtitle, tone, icon, items, emptyText, onActivateSource }) {
+  const displayIcon = tone === "bullish" ? "^" : tone === "bearish" ? "v" : icon;
   return (
     <article className={`subpanel catalyst-card tone-${tone}`}>
       <div className="subpanel-header">
         <div>
           <h3>
-            <span className="catalyst-icon" aria-hidden="true">{icon}</span> {title}
+            <span className="catalyst-icon" aria-hidden="true">{displayIcon}</span> {title}
           </h3>
           <p className="muted small">{subtitle}</p>
         </div>
